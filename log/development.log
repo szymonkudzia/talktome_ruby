@@ -10732,3 +10732,1356 @@ ActionController::RoutingError (No route matches [POST] "/service/searchPeople")
   Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
   Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
   Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:15:02 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:15:03 +0200
+
+ActionController::RoutingError (No route matches [POST] "/service/localization"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (31.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (72.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:15:06 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:15:24 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:15:25 +0200
+
+ActionController::RoutingError (No route matches [POST] "/service/localization"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (44.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:15:25 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:15:46 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 32ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:15:47 +0200
+
+ActionController::RoutingError (No route matches [POST] "/service/localization"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (59.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:15:47 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.0ms)
+
+
+Started GET "/service/localization" for 127.0.0.1 at 2014-05-09 19:16:04 +0200
+Processing by LocalizationController#localization as HTML
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:16:11 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (41.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:16:11 +0200
+
+ActionController::RoutingError (No route matches [POST] "/service/localization"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (50.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:17:17 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:17:18 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.0.3) lib/action_controller/metal/request_forgery_protection.rb:163:in `handle_unverified_request'
+  actionpack (4.0.3) lib/action_controller/metal/request_forgery_protection.rb:170:in `handle_unverified_request'
+  actionpack (4.0.3) lib/action_controller/metal/request_forgery_protection.rb:177:in `verify_authenticity_token'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:377:in `_run__542839412__process_action__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.3) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.3) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.3) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.3) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.3) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__999535866__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:17:18 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (54.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:17:55 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:17:55 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (32.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:17:56 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 2ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.0.3) lib/action_controller/metal/request_forgery_protection.rb:163:in `handle_unverified_request'
+  actionpack (4.0.3) lib/action_controller/metal/request_forgery_protection.rb:170:in `handle_unverified_request'
+  actionpack (4.0.3) lib/action_controller/metal/request_forgery_protection.rb:177:in `verify_authenticity_token'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:377:in `_run__542839412__process_action__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.3) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.3) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.3) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.3) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.3) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__999535866__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:18:46 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:18:46 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.0.3) lib/action_controller/metal/request_forgery_protection.rb:163:in `handle_unverified_request'
+  actionpack (4.0.3) lib/action_controller/metal/request_forgery_protection.rb:170:in `handle_unverified_request'
+  actionpack (4.0.3) lib/action_controller/metal/request_forgery_protection.rb:177:in `verify_authenticity_token'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:377:in `_run__542839412__process_action__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.3) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.3) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.3) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.3) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.3) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__999535866__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:18:46 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (47.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:22:12 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:22:12 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (30.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:22:13 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 2ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.0.3) lib/action_controller/metal/request_forgery_protection.rb:163:in `handle_unverified_request'
+  actionpack (4.0.3) lib/action_controller/metal/request_forgery_protection.rb:170:in `handle_unverified_request'
+  actionpack (4.0.3) lib/action_controller/metal/request_forgery_protection.rb:177:in `verify_authenticity_token'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:377:in `_run__542839412__process_action__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.3) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.3) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.3) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.3) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.3) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.3) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.3) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.3) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.3) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.3) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.3) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__999535866__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:27:42 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:27:43 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:27:43 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (27.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (77.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:29:50 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:29:51 +0200
+
+SyntaxError (D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:8: syntax error, unexpected ':', expecting =>
+            'loginError': '', 
+                         ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:9: syntax error, unexpected ':', expecting keyword_end
+            'loginButton': '', 
+                          ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:10: syntax error, unexpected ':', expecting keyword_end
+            'rememberMe': '', 
+                         ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:11: syntax error, unexpected ':', expecting keyword_end
+            'email': '', 
+                    ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:12: syntax error, unexpected ':', expecting keyword_end
+            'password': '', 
+                       ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:13: syntax error, unexpected ':', expecting keyword_end
+            'loginChangePassword': '', 
+                                  ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:14: syntax error, unexpected ':', expecting keyword_end
+            'loginPageSlogan':'', 
+                              ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:15: syntax error, unexpected ':', expecting keyword_end
+            'loginAddNewAccount':'',
+                                 ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:16: syntax error, unexpected ':', expecting keyword_end
+            'languageSelectBoxLabel': '',
+                                     ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:17: syntax error, unexpected ':', expecting keyword_end
+            'firstName': '',
+                        ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:18: syntax error, unexpected ':', expecting keyword_end
+            'lastName': '',
+                       ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:19: syntax error, unexpected ':', expecting keyword_end
+            'passwordRepeated': '',
+                               ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:20: syntax error, unexpected ':', expecting keyword_end
+            'registerButton': '',
+                             ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:21: syntax error, unexpected ':', expecting keyword_end
+		'birthdate': '',
+		            ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:22: syntax error, unexpected ':', expecting keyword_end
+		'confirmationSuccess': '',
+		                      ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:23: syntax error, unexpected ':', expecting keyword_end
+		'confirmationFailure': '',
+		                      ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:24: syntax error, unexpected ':', expecting keyword_end
+		'registrationSuccess': '',
+		                      ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:25: syntax error, unexpected ':', expecting keyword_end
+		'registrationError': '',
+		                    ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:26: syntax error, unexpected ':', expecting keyword_end
+		'serverUnaviable': '',
+		                  ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:27: syntax error, unexpected ':', expecting keyword_end
+		'changePasswordButton': '',
+		                       ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:28: syntax error, unexpected ':', expecting keyword_end
+		'changePasswordInfo': '',
+		                     ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:29: syntax error, unexpected ':', expecting keyword_end
+		'changePasswordCodeGenerationInfo': '',
+		                                   ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:30: syntax error, unexpected ':', expecting keyword_end
+		'changePasswordSuccess': '',
+		                        ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:31: syntax error, unexpected ':', expecting keyword_end
+		'changePasswordFailure':'',
+		                        ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:32: syntax error, unexpected ':', expecting keyword_end
+		'codeGenerationSuccess': '',
+		                        ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:33: syntax error, unexpected ':', expecting keyword_end
+		'codeGenerationFailure': '',
+		                        ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:34: syntax error, unexpected ':', expecting keyword_end
+            'topMenuProfile': '',
+                             ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:35: syntax error, unexpected ':', expecting keyword_end
+            'topMenuFind': '',
+                          ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:36: syntax error, unexpected ':', expecting keyword_end
+            'topMenuConversation': '',
+                                  ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:37: syntax error, unexpected ':', expecting keyword_end
+            'topMenuFriends': '',
+                             ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:38: syntax error, unexpected ':', expecting keyword_end
+            'logout': '',
+                     ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:39: syntax error, unexpected ':', expecting keyword_end
+            'telephone': '',
+                        ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:40: syntax error, unexpected ':', expecting keyword_end
+            'chooseCountries': '',
+                              ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:41: syntax error, unexpected ':', expecting keyword_end
+            'chooseInterests': '',
+                              ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:42: syntax error, unexpected ':', expecting keyword_end
+            'aboutMe': '',
+                      ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:43: syntax error, unexpected ':', expecting keyword_end
+            'aboutMeMsg': '',
+                         ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:44: syntax error, unexpected ':', expecting keyword_end
+            'lookingForCountries': '',
+                                  ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:45: syntax error, unexpected ':', expecting keyword_end
+            'myInterests': '',
+                          ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:46: syntax error, unexpected ':', expecting keyword_end
+            'contact': '', 
+                      ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:47: syntax error, unexpected ':', expecting keyword_end
+            'defaultSearchSettingsMsg': '',
+                                       ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:48: syntax error, unexpected ':', expecting keyword_end
+            'modifiedSearchSettingsMsg': '',
+                                        ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:49: syntax error, unexpected ':', expecting keyword_end
+            'change': '',
+                     ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:50: syntax error, unexpected ':', expecting keyword_end
+            'changeSearchSettings': '',
+                                   ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:51: syntax error, unexpected ':', expecting keyword_end
+            'cancel': '', 
+                     ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:52: syntax error, unexpected ':', expecting keyword_end
+            'fromCountries': '',
+                            ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:53: syntax error, unexpected ':', expecting keyword_end
+            'interestedIn': '',
+                           ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:54: syntax error, unexpected ':', expecting keyword_end
+            'inAge': '',
+                    ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:55: syntax error, unexpected ':', expecting keyword_end
+            'men': '',
+                  ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:56: syntax error, unexpected ':', expecting keyword_end
+            'women': '',
+                    ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:57: syntax error, unexpected ':', expecting keyword_end
+            'sex': '',
+                  ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:58: syntax error, unexpected ':', expecting keyword_end
+            'age': '',
+                  ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:59: syntax error, unexpected ':', expecting keyword_end
+            'back': '',
+                   ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:60: syntax error, unexpected ':', expecting keyword_end
+            'wordForTranslation': '',
+                                 ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:61: syntax error, unexpected ':', expecting keyword_end
+            'translation': '',
+                          ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:62: syntax error, unexpected ':', expecting keyword_end
+            'message': '',
+                      ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:63: syntax error, unexpected ':', expecting keyword_end
+            'search': '', 
+                     ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:64: syntax error, unexpected ':', expecting keyword_end
+            'invertLanguages': '',
+                              ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:65: syntax error, unexpected ':', expecting keyword_end
+            'addToFriendList': '',
+                              ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:66: syntax error, unexpected ':', expecting keyword_end
+            'save': '',
+                   ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:67: syntax error, unexpected ':', expecting keyword_end
+            'deleteFromFriends': '',
+                                ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:68: syntax error, unexpected ':', expecting keyword_end
+            'confirmFriend': '',
+                            ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:69: syntax error, unexpected ':', expecting keyword_end
+            'rejectFriend': ''
+                           ^
+D:/Projekty/ruby/TalkToMe/TalkToMe/trunk/app/controllers/localization_controller.rb:70: syntax error, unexpected '}', expecting keyword_end):
+  activesupport (4.0.3) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.3) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.3) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.3) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.3) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.3) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__999535866__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:29:51 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (19.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (29.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (93.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:31:49 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:31:50 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:31:50 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (54.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:36:01 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:36:01 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:36:01 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (47.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:36:26 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:36:27 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:36:27 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (49.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:37:45 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:37:45 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:37:45 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (44.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-09 19:41:53 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-09 19:41:54 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-09 19:41:54 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (59.0ms)
