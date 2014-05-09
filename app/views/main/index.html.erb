@@ -1,0 +1,89 @@
+<html ng-app="talkToMeApp">
+<head>
+    <link href="/html/css/vendors/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="/html/css/vendors/jquery/jquery-ui-1.10.3.css" rel="stylesheet" type="text/css">
+	<link href="/html/css/vendors/jquery/perfect-scrollbar-0.4.6.min.css" rel="stylesheet" type="text/css">
+
+	<link href="/html/css/vendors/bootstrap/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet/less" type="text/css" href="/html/css/styles.less" />
+    <script src="/html/js/vendors/less/less-1.5.0.min.js" type="text/javascript"></script>
+
+    <title>Talk to me!</title>
+
+    <style type="text/css">
+		[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+			display: none !important;
+		}
+    </style>
+</head>
+
+<body ng-controller='MainCtrl'>
+<div style="position: relative; height: 60px;">
+	<ul class="nav nav-tabs topMenu" ng-show="location.path().indexOf('main') >= 0" ng-cloak>
+		<li><img src="html/img/logoTopMenu.png"/></li>
+
+		<li class="pull-right" ng-class="{active: location.path().indexOf('profile') >= 0}"><a href="#/main/profile" ng-bind="session.localization.topMenuProfile"></a></li>
+		<li class="pull-right" ng-class="{active: location.path().indexOf('find') >= 0}"><a href="#/main/find" ng-bind="session.localization.topMenuFind"></a></li>
+		<li class="pull-right" ng-class="{active: location.path().indexOf('conversation') >= 0}"><a href="#/main/conversation" ng-bind="session.localization.topMenuConversation"></a></li>
+		<li class="pull-right" ng-class="{active: location.path().indexOf('friends') >= 0}"><a href="#/main/friends" ng-bind="session.localization.topMenuFriends"></a></li>
+	</ul>
+	</div>
+<div class="background">
+</div>
+	<div ng-view>
+	</div>
+
+<script src="/html/config.cfg" type="text/javascript"></script>	
+
+<script src="/html/js/vendors/jquery/jquery-2.0.3.min.js"></script>
+<script src="/html/js/vendors/jquery/jquery-ui-1.10.3.js"></script>
+<script src="/html/js/vendors/underscore/underscore.js"></script>
+<script src="/html/js/vendors/angular/angular.js"></script>
+<script src="/html/js/vendors/angular/angular-route.js"></script>
+<script src="/html/js/vendors/angular/angular-resource.js"></script>
+<script src="/html/js/vendors/angular/angular-cookies.js"></script>
+<script src="/html/js/vendors/bootstrap/bootstrap.js"></script>
+<script src="/html/js/vendors/bootstrap/bootstrap-multiselect.js"></script>
+<script src="/html/js/vendors/jquery/perfect-scrollbar-0.4.6.with-mousewheel.min.js"></script>
+<script src="/html/js/vendors/jquery/attrchange.js"></script>
+
+
+
+<script src="/html/js/app.js"></script>
+<script src="/html/js/controllers/MainCtrl.js"></script>
+<script src="/html/js/controllers/LoginCtrl.js"></script>
+<script src="/html/js/controllers/RegisterCtrl.js"></script>
+<script src="/html/js/controllers/ChangePasswordCtrl.js"></script>
+<script src="/html/js/controllers/ProfileCtrl.js"></script>
+<script src="/html/js/controllers/FindCtrl.js"></script>
+<script src="/html/js/controllers/ConversationCtrl.js"></script>
+<script src="/html/js/controllers/FriendsCtrl.js"></script>
+
+
+<script src="/html/js/services/MainService.js"></script>
+<script src="/html/js/services/LoginService.js"></script>
+<script src="/html/js/services/LocalizationService.js"></script>
+<script src="/html/js/services/RegisterService.js"></script>
+<script src="/html/js/services/WorkersNotifierService.js"></script>
+<script src="/html/js/services/ChangePasswordService.js"></script>
+<script src="/html/js/services/RestrictAccessService.js"></script>
+<script src="/html/js/services/SlideInPageService.js"></script>
+<script src="/html/js/services/SlideOutPageService.js"></script>
+<script src="/html/js/services/MessagingService.js"></script>
+<script src="/html/js/services/FriendListService.js"></script>
+<script src="/html/js/services/GoogleTranslatorService.js"></script>
+<script src="/html/js/services/SearchPeopleService.js"></script>
+<script src="/html/js/services/GetCountriesService.js"></script>
+<script src="/html/js/services/UpdateUserService.js"></script>
+
+
+<script src="/html/js/directives/decorators/Datepicker.js"></script>
+<script src="/html/js/directives/decorators/ngRepeatNotifier.js"></script>
+
+<script src="/html/js/directives/widgets/PersonPicker.js"></script>
+<script src="/html/js/directives/widgets/MessageBaloon.js"></script>
+<script src="/html/js/directives/widgets/VisitingCard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<div class="container mainContainer">
+<div style="position: relative">
+<div class="slideInPageContainer">
+
+
+	<div ng-include="'html/views/partials/searchBox.html'" class="col-md-3 no-padding mainLeftContainer"></div>
+
+	<div id="friendList" class="col-md-3 no-padding mainLeftContainer well border-color" style="clear: left;">
+
+		<div ng-repeat="friend in session.friends" 
+			ng-show="$parent.matchSearchValue(friend)"
+			class="{{$parent.isPersonActive(friend)}}"
+			style="position:relative" ng-click="changeActiveFriend(friend)">
+
+			<person-picker picture-url="{{friend.profilePicture}}" name="{{ genName(friend) }}"></person-picker>
+		</div>
+	</div>
+
+
+	<div class="col-md-9 mainRightContainer activePerson">
+		<div class=" well border-color">
+			<img ng-src="{{session.activeFriendInConversation.profilePicture}}"/>
+			<strong><span>{{ genName(session.activeFriendInConversation) }}</span></strong>
+		</div>
+	</div>
+
+
+	<div class="col-md-9 mainRightContainer">
+		<div id="messageBox" class="messageBox border-color">
+				<message-baloon type="{{$parent.getMessageType(message)}}" ng-repeat="message in session.activeFriendInConversation.messages">
+					{{message.message}}
+					<br/>
+					<span style="font-size: 0.7em;float: right;margin-top: 3px;">{{message.date}}</span>
+				</message-baloon>
+		</div>
+	</div>
+
+	<div id="messageCompositor" class="col-md-9 mainRightContainer">
+		<div class="col-md-4 no-padding">
+			<input type="text" class="form-control border-color" placeholder="{{session.localization.wordForTranslation}}" ng-keyup="translate($event)" ng-model="textForTranslation"></input>
+		</div>
+		<div class=" col-md-4">
+		<div class="btn-group">
+			<div class="btn-group">
+			    <button type="button" style="max-width: 78px; min-width: 78px;" class="btn btn-default dropdown-toggle border-color" data-toggle="dropdown">
+			    	{{fromLanguage.name}}
+			    	<span class="caret"></span>
+			    </button>
+			    <ul class="dropdown-menu">
+			      <li><a ng-repeat="language in session.localization.languages" ng-click="changeFromLanguage(language)">{{language.name}}</a></li>
+			    </ul>
+			</div>
+			<button type="button" class="btn btn-default border-color" title="{{session.localization.invertLanguages}}" style="height: 34px;" ng-click="invertLanguages()">
+				<span class="glyphicon glyphicon-refresh"></span>
+			</button>
+			<div class="btn-group">
+			    <button type="button" style="max-width: 78px; min-width: 78px;" class="btn btn-default dropdown-toggle border-color" data-toggle="dropdown">
+			    	{{toLanguage.name}}
+			    	<span class="caret"></span>
+			    </button>
+			    <ul class="dropdown-menu">
+			      <li><a ng-repeat="language in session.localization.languages" ng-click="changeToLanguage(language)">{{language.name}}</a></li>
+			    </ul>
+			</div>
+		</div>
+		</div>
+		<div class="col-md-4 no-padding">
+			<!-- <input type="text" class="form-control border-color" placeholder="{{session.localization.translation}}" ng-model="textTranslated"></input> -->
+			<select id="translations" class="form-control border-color" placeholder="{{session.localization.translation}}" ng-model="textTranslated" ng-click="clearSelectBGColor()">
+				<option ng-repeat="translation in translations" value="translation">{{translation}}</option>
+			</select>
+		</div>
+
+		<p class="col-md-11"></p>
+
+
+		<div class="fill-x">
+			<textarea class="form-control border-color" rows="5" placeholder="{{session.localization.message}}..." ng-keyup="submitMessage($event)" ng-model="message"></textarea>
+		</div>
+	</div>
+</div>
+</div>
+</div>

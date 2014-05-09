@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="loginLogo">
+        <img src="/html/img/logo.png" />
+    </div>
+
+    <h1 class="loginPageSlogan">{{ session.localization.loginPageSlogan }}</h1>
+
+	<div class="alert alert-success text-center" ng-show="confirmation=='true'">
+		{{ session.localization.confirmationSuccess }}
+	</div>
+
+	<div class="alert alert-danger text-center" ng-show="confirmation == 'false'">
+		{{ session.localization.confirmationFailure }}
+	</div>
+
+
+    <div class="loginBox">
+        <div class="col-sm-12">
+            <form class="form-horizontal validated-form" novalidate role="form" name="logForm" ng-submit="login()">
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="{{ session.localization.email }}" ng-model="loginForm.email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="{{ session.localization.password }}" ng-model="loginForm.password" required>
+                    </div>
+                </div>
+                <!--div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" ng-model="loginForm.rememberMe"> {{ session.localization.rememberMe }}
+                            </label>
+                        </div>
+                    </div>
+                </div-->
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-default btn-primary col-sm-12" ng-disabled="logForm.$invalid || logForm.$pristine">{{ session.localization.loginButton }}</button>
+                        <a ng-href="#/changePassword">{{ session.localization.loginChangePassword }}</a>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <div class="alert alert-danger" ng-show="loginForm.error">
+                            {{ session.localization.loginError }}
+                        </div>
+                    </div>
+                </div
+            </form>
+        </div>
+    </div>
+
+    <div class="addNewAccount">
+        <a ng-href="#/register"> {{ session.localization.loginAddNewAccount }} </a>
+    </div>
+<div>
+<br/>
+<br/>
+<br/>
+
+
+<div ng-include src="'html/views/partials/bottomPanel.html'"></div>

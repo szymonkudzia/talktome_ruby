@@ -1,0 +1,87 @@
+<div class="container mainContainer">
+<div style="position: relative">
+<div class="slideInPageContainer">
+	<div class="col-md-3 mainLeftPanel">
+		<div class="col-md-12 no-padding">
+			<h3 style="margin-top: 0px;margin-bottom: 10px;">{{ session.user.firstName }} {{ session.user.lastName }}</h3>
+		</div>
+		<img src="html/img/noProfilePicture.png" class="profilePicture form-control border-color"/>
+
+		<button class="btn border-color btn-success" ng-click="logout()">{{ session.localization.logout }}</button>
+	</div>
+	
+	<div class="col-md-9 mainRightPanel">
+		<div class="fill-x">
+			<button class="btn btn-warning" style="float:right" ng-disabled="!userSettingsModified" ng-click="saveUserSettings()">{{session.localization.save}}</button>
+		</div>
+		<label class="fill-x font-size-large">{{session.localization.aboutMe}}:</label>
+		<div class="fill-x">
+			<textarea class="form-control border-color" rows="5" placeholder="{{session.localization.aboutMeMsg}}" ng-model="userSettings.aboutMe"></textarea>
+		</div>
+
+		<br>
+
+		<label class="fill-x font-size-large">{{session.localization.lookingForCountries}}:</label>	
+		<select id="locations" class="multiselect col-md-12 border-color" multiple="multiple" ng-model="userSettings.countries">
+			<!-- <option ng-if="!session.countries" value="l"></option> -->
+			<option ng-repeat="country in session.countries" ng-repeat-notifier on-finish="countriesRenderingFinished" value="{{country.countryCode}}">{{country.name}}</option>
+		</select> 
+
+		<br>
+		<br>
+
+		<label class="fill-x font-size-large">{{session.localization.myInterests}}:</label>	
+		<select id="hobbies" class="multiselect col-md-12 border-color" multiple="multiple" ng-model="userSettings.interests">
+			<option ng-repeat="interest in session.interests" ng-repeat-notifier on-finish="interestsRenderingFinished" value="{{interest}}">{{interest}}</option>
+		</select> 
+
+		<br>
+		<br>
+	
+		<label class="fill-x font-size-large">{{session.localization.contact}}:</label>	
+		
+
+
+		<div class="col-md-3 no-padding">
+			<label class="profile-label badge whiteLabel" for="email" >E-mail:</label>
+		</div>
+		<div class="col-md-9 no-padding">
+			<input id="email" class="form-control border-color" ng-model="userSettings.email"/>
+		</div>
+
+
+		<p class="col-md-11">
+		</p>
+
+		<div class="col-md-3 no-padding">
+			<label class="profile-label badge whiteLabel" for="telephone">{{session.localization.telephone}}:</label>
+		</div>
+		<div class="col-md-9 no-padding">
+			<input id="telephone" class="form-control border-color" ng-model="userSettings.telephone"/>
+		</div>
+
+		<p class="col-md-11">
+		</p>
+
+		<div class="col-md-3 no-padding">
+			<label class="profile-label badge whiteLabel" for="facebook">Facebook:</label>
+		</div>
+		<div class="col-md-9 no-padding">
+			<input id="facebook" class="form-control border-color" ng-model="userSettings.facebook"/>
+		</div>
+
+		<p class="col-md-11">
+		</p>
+
+
+		<div class="col-md-3 no-padding">
+			<label class="profile-label badge whiteLabel" for="googlep">Google+:</label>
+		</div>
+		<div class="col-md-9 no-padding">
+			<input id="googlep" class="form-control border-color" ng-model="userSettings.googlep" />
+		</div>
+
+	</div>
+</div>
+</div>
+</div>

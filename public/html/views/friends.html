@@ -1,0 +1,136 @@
+<div class="container mainContainer">
+<div style="position: relative">
+<div class="slideInPageContainer fill-x">
+	<div id="search" class="col-md-12 no-padding">
+		<ul class="nav nav-pills">
+			<li ng-class="{active: confirmed}"><a ng-click="changeFriendsType(1)">Potwierdzni</a></li>
+			<li ng-class="{active: !confirmed}"><a ng-click="changeFriendsType(2)">Nie potwierdzeni</a></li>
+		</ul>
+
+
+		<div class="friendsView friendSearchResultsContainer">
+			<div ng-repeat="person in session.friends"
+				 ng-show="showPerson(person)">
+			<visiting-card 
+				name="{{person.firstName}}" age="{{person.birthdate | dateToAge}}" picture-url="{{person.profilePicture}}" country="{{person.country | languageCodeToCountryName}}" on-click="onVisitCardClick(person)" tags="['aaa', 'bbb']"
+				>
+			</visiting-card>
+			</div>
+			
+		</div>
+
+		<div class="fill-x centerText">
+			<ul class="pagination border-color">
+				<li><a href="#">&laquo;</a></li>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">...</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&raquo;</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="profile" style="display: none">
+		<div class="col-md-12 no-padding">
+			<button class="btn btn-default border-color" ng-click="onBackClick()">
+				&larr; {{session.localization.back}}
+			</button>
+			<button ng-if="confirmed"  class="btn btn-warning border-color" style="float: right" ng-click="$parent.deleteFriend()">
+				{{session.localization.deleteFromFriends}}
+			</button>
+
+			<button ng-if="!confirmed" class="btn btn-default border-color" style="float: right" ng-click="$parent.deleteFriend()">
+				{{session.localization.rejectFriend}}
+			</button>
+
+
+			<button ng-if="!confirmed" class="btn btn-warning border-color" style="float: right; margin-right: 10px" ng-click="$parent.confirmFriend()">
+				{{session.localization.confirmFriend}}
+			</button>
+			
+		</div>
+
+		<br/>
+
+		<div class="col-md-12 no-padding">
+		<div style="width: 24%; float: left;">
+			<h3 style="margin-top: 0px;margin-bottom: 4px;">{{selectedPerson.firstName}} {{selectedPerson.lastName}}</h3>
+			<img src="html/img/noProfilePicture.png" class="profilePicture form-control border-color"/>
+		</div>
+
+		<div style="width: 75%; display: inline-block">
+			<label class="fill-x font-size-large">{{session.localization.aboutMe}}:</label>
+			<div class="fill-x">
+				<div class="well disabledInput border-color">
+					{{selectedPerson.aboutMe}}
+				</div>
+			</div>
+
+			<br>
+
+			<label class="fill-x font-size-large">{{session.localization.lookingForCountries}}:</label>	
+			
+			<div class="badge whiteLabel" style="margin-right: 5px;" ng-repeat="country in selectedPerson.countries">{{ country.name }}</div>
+
+			<br>
+			<br>
+
+			<label class="fill-x font-size-large">{{session.localization.myInterests}}:</label>	
+			
+			<div class="badge whiteLabel" style="margin-right: 5px;" ng-repeat="interest in selectedPerson.interests">{{ interest.interest }}</div>
+
+			<br>
+			<br>
+		
+			<label class="fill-x font-size-large">{{session.localization.contact}}:</label>	
+			
+
+
+			<div class="col-md-3 no-padding">
+				<label class="profile-label badge whiteLabel" for="telephone">E-mail:</label>
+			</div>
+			<div class="col-md-9 no-padding">
+				<input id="email" class="form-control border-color disabledInput" readonly="true" ng-model="selectedPerson.email" />
+			</div>
+
+
+			<p class="col-md-11">
+			</p>
+
+			<div class="col-md-3 no-padding">
+				<label class="profile-label badge whiteLabel" for="telephone">{{session.localization.telephone}}:</label>
+			</div>
+			<div class="col-md-9 no-padding">
+				<input id="telephone" class="form-control border-color disabledInput" readonly="true" ng-model="selectedPerson.telephone"/>
+			</div>
+
+			<p class="col-md-11">
+			</p>
+
+			<div class="col-md-3 no-padding">
+				<label class="profile-label badge whiteLabel" for="telephone">Facebook:</label>
+			</div>
+			<div class="col-md-9 no-padding">
+				<input id="facebook" class="form-control border-color disabledInput" readonly ng-model="selectedPerson.facebook" />
+			</div>
+
+			<p class="col-md-11">
+			</p>
+
+
+			<div class="col-md-3 no-padding">
+				<label class="profile-label badge whiteLabel" for="telephone">Google+:</label>
+			</div>
+			<div class="col-md-9 no-padding">
+				<input id="googlep" class="form-control border-color disabledInput" readonly ng-model="selectedPerson.googlep" />
+			</div>
+
+		</div>
+	</div>
+
+
+	</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,83 @@
+<div class="container">
+    <div class="loginLogo">
+        <img src="/html/img/logo.png" />
+    </div>
+
+    <h1 class="loginPageSlogan">{{ session.localization.loginPageSlogan }}</h1>
+
+	<div class="alert alert-success text-center" ng-show="registrationSuccess">
+		{{ session.localization.registrationSuccess}}
+	</div>
+
+    <div class="loginBox" ng-hide="registrationSuccess">
+        <div class="col-sm-12">
+            <form class="form-horizontal validated-form" novalidate role="form" name="form"  ng-submit="register()">
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="{{ session.localization.firstName }}" ng-model="registerForm.firstName" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="inputLastName" placeholder="{{ session.localization.lastName }}" ng-model="registerForm.lastName" required >
+                    </div>
+                </div>
+				<div class="form-group">
+                    <div class="col-sm-12">
+						<input type="text" class="form-control" id="inputBirthdate" placeholder="{{ session.localization.birthdate }}" ng-model="registerForm.birthdate" required datepicker>
+                    </div>
+                </div>
+				<div class="form-group">
+                    <div class="col-sm-12">
+						<select class="form-control selectPlaceholder" id="inputCountry" name="country" ng-model="registerForm.country" required >
+							<option value="">Country</option>
+							<option ng-repeat="country in countries" value="{{ country.code }}"> {{ country.name }} </option>
+						</select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="{{ session.localization.email }}" ng-model="registerForm.email" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="{{ session.localization.password }}" ng-model="registerForm.password" min="6" required >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="password" class="form-control" id="inputPasswordRepeated" name="passwordRepeated"
+								ng-model="registerForm.passwordRepeated"  placeholder="{{ session.localization.passwordRepeated }}"
+								required>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div  class="col-sm-12">
+                        <button type="submit" class="btn btn-default btn-primary col-sm-12"  ng-disabled="form.$invalid">{{ session.localization.registerButton }}</button>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <div class="alert alert-danger" ng-show="registerForm.error.addressEmailDuplication">
+                            {{ session.localization.registrationError }}
+                        </div>
+                    </div>
+                </div
+				<div class="form-group">
+                    <div class="col-sm-12">
+                        <div class="alert alert-danger" ng-show="loginForm.error.serverUnaviable">
+                            {{ session.localization.serverUnaviable }}
+                        </div>
+                    </div>
+                </div
+            </form>
+        </div>
+    </div>
+<div>
+
+
+<div ng-include src="'html/views/partials/bottomPanel.html'"></div>

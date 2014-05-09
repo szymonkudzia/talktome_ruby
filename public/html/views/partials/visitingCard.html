@@ -1,0 +1,14 @@
+<div class="visitingCard border-color" ng-click="onClick()">
+	<img ng-src="{{ pictureUrl }}">
+	<div class="basicInfo">
+		<div class="name">
+			<strong>{{ name }}</strong>
+		</div>
+		<div>
+			<span>{{$parent.session.localization.age}}: {{ age }}</span>
+		</div>
+	</div>
+	<div class="country">
+		<span>{{ country }}</span>
+	</div>
+</div>

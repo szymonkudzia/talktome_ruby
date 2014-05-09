@@ -1,0 +1,571 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,latin-ext);
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+/*************************                VARIABLES                 **********************/
+@OpenSansFont: 'Open Sans', sans-serif;
+
+
+
+/*************************                MIXINS                    **********************/
+.placeholderColor(@color: #ccc) {
+	&::-webkit-input-placeholder {
+        color: @color;
+    }
+    &:-moz-placeholder {
+        color: @color;
+    }
+}
+
+.gradientTopBottom(@topColor, @bottomColor) {
+    background: @topColor;
+    background: -moz-linear-gradient(top,  @topColor 0%, @bottomColor 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@topColor), color-stop(100%,@bottomColor));
+    background: -webkit-linear-gradient(top,  @topColor 0%,@bottomColor 100%);
+    background: -o-linear-gradient(top,  @topColor 0%,@bottomColor 100%);
+    background: -ms-linear-gradient(top,  @topColor 0%,@bottomColor 100%);
+    background: linear-gradient(to bottom,  @topColor 0%,@bottomColor 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@topColor', endColorstr='#1e5799',GradientType=0 );
+}
+
+
+
+/******************** GENERAL CLASSES ****************************/
+.fill-x {
+    width: 100%;
+}
+
+.fill-y {
+    height: 100%;
+}
+
+.font-size-large {
+    font-size: 1.25em;
+}
+
+.container {
+    max-width: 970px;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.inline {
+    display: inline;
+}
+
+.profile-label {
+    font-weight: normal;
+}
+
+.profile-row {
+    margin-bottom: 10px;
+    float:left;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.shadow {
+    box-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.25);
+}
+
+@border-color: #707070;
+
+.border-color {
+    border-color: @border-color !important;
+}
+
+.whiteLabel {
+    border: 1px solid @border-color;
+    color: black;
+    background: white;
+    font-weight: normal;
+    padding: 5px 9px;
+}
+
+.disabledInput {
+    cursor: text !important;
+    background-color: white!important;
+}
+
+/****************** END OF GENERAL CLASSES ***********************/
+
+
+body {
+    font-family: @OpenSansFont;
+}
+
+.background {
+        background-image: url('../img/background6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    opacity: .20;
+}
+
+a {
+    cursor: pointer;
+}
+
+div.topMenu {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+
+    background-color: blueviolet;
+    z-index: 1000;
+}
+
+div.loginLogo {
+    text-align: center;
+    margin-top: 20px;
+
+    img {
+        width: 200px;
+        height: 65px;
+    }
+}
+
+h1.loginPageSlogan {
+    font-family: @OpenSansFont;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+div.loginBox {
+    position: relative;
+    width: 300px;
+
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    background-color: rgba(245, 245, 245, 0.5);//#f5f5f5;
+    border: 1px solid @border-color;
+
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.loginBox {
+	input {
+        height: 40px;
+    }
+
+    button[type=submit] {
+        margin-bottom: 5px;
+    }
+
+    a {
+        font-size: 0.9em;
+    }
+}
+
+div.addNewAccount {
+    margin-top: 10px;
+	margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+
+    font-size: 1.1em;
+    text-align: center;
+}
+
+
+div.bottomOptionsPanel {
+	width: 100%;
+
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+
+	.progress {
+		margin-bottom: 0px;
+		border-radius: 0px;
+		height: 7px;
+	}
+
+
+	.bottomOptionsPanelContent {
+		@bottomOptionsPanelHight: 47px;
+		height: @bottomOptionsPanelHight;
+		line-height: @bottomOptionsPanelHight - 7px;
+		background-color: #efefe3;
+		border-top: 2px solid #dbdbdb;
+
+		div {
+			vertical-align: middle;
+		}
+
+
+		label {
+			color: #808080;
+			font-size: 0.9em;
+			font-weight: 300;
+			font-family: @OpenSansFont;
+			margin-right: 10px;
+		}
+
+		select {
+			width: 200px;
+			margin-right: 20px;
+		}
+	}
+}
+
+
+.validated-form .ng-invalid.ng-dirty {
+	background-color: #FA787E;
+	.placeholderColor(#444444);
+}
+    
+
+select.selectPlaceholder {
+	color: #959595;
+}
+
+
+
+
+
+/**************** Top Menu ****************/
+.topMenu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 10px 10px 0px 10px;
+    font-size: 20px;
+    background: crimson;
+    border-bottom: 2px solid black;
+
+    .gradientTopBottom(rgba(220,20,60,1), rgba(124,0,12,1));
+
+    li {
+        margin-bottom: -2px;
+        font-weight: bold;
+
+        a { 
+            border-radius: 8px 8px 0px 0px;
+            color: white;
+        }
+
+        a:hover, a:focus {
+            // background-color: #EB123B;
+            .gradientTopBottom(rgba(220,20,60,1), rgba(124,0,12,1));
+            border: 2px solid white;
+            border-bottom-color: rgba(124,0,12,1);// transparent;
+        }
+
+        img { 
+            margin-top: -7px;
+            margin-left: 5px;
+        }
+    }
+
+    li.active {
+        a, a:hover, a:focus {
+            background: white;
+            border: 2px solid black;
+            border-bottom-color: transparent;
+        }
+    }
+}
+
+
+
+/************************  Main Profile Page ***************************/
+
+@mainContainerPadding: 20px;
+@profilePictureWidth: 200px;
+
+.mainContainer {
+    padding-top: 20px;
+    // display: none;
+}
+
+.slideInPageContainer {
+   display: none;
+   position: absolute; 
+   height: 600px;
+}
+
+.mainLeftPanel {
+    display: inline-block;
+    // width: @profilePictureWidth + @mainProfileContainerPadding;
+    //padding-right: @mainProfileContainerPadding;
+    
+    button {
+        margin-top: @mainContainerPadding;
+        width: 100%;
+    }
+}
+
+.mainLeftContainer.well {
+    height: 535px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.mainRightContainer {
+    // position: absolute;
+    // float: right;
+}
+
+.mainRightPanel {
+    display: inline-block;
+}
+
+.profilePicture {
+    width: 205px;
+    height: 200px;
+    border: 1px solid rgb(240, 240, 240);
+    padding: 0px;
+}
+
+
+.multiselect-container.dropdown-menu {
+    width: 100%;
+}
+
+
+
+
+/*********    PersonPicker   ***********/
+.personPickerContainer {
+    height: 60px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.personPickerContainer:hover {
+    .gradientTopBottom(rgb(125,185,232), rgba(30,87,153,1));
+}
+
+
+.personPickerContainerActive div, .personPickerContainerActive .personPickerContainer:hover{
+    .gradientTopBottom(rgba(252,193,32,1), rgba(255,163,50,1));
+
+    cursor: default;
+    .personPickerUnderline {
+        display: none;
+    }
+}
+
+.personPickerUnderline {
+    margin-top: 5px;
+    margin-left: 5%;
+    width: 90%;
+    height: 1px;
+    background-color: #E3E3E3;
+}
+
+
+
+.personPickerPicture {
+    height: 50px;
+    width: 50px;
+}
+
+
+/*********    End of PersonPicker ******/
+
+/********** Conversation Box ***************/
+.activePerson {
+    margin-top: -38px;
+
+    div {
+        padding: 5px; 
+        margin-bottom: 10px;
+        .gradientTopBottom(rgba(252,193,32,1), rgba(255,163,50,1));
+
+        img {
+            width: 50px; 
+            height: 50px; 
+            margin-right: 10px;
+        }
+
+        span {
+            font-size: 1.5em; 
+            margin-top: 5px; 
+            vertical-align: middle;
+        }
+    }
+}
+
+
+.messageBox {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 405px;
+    overflow: hidden;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    // margin-top: -39px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #E4E4E4;
+}
+
+.leftBaloon {
+    float: left;
+    background: #E7E7E7;
+    // .gradientTopBottom(#E7E7E7, #BBBABA);`
+    //.gradientTopBottom(rgba(252,193,32,1), rgba(255,163,50,1));
+    .gradientTopBottom(rgba(112,204,102,1), rgba(72,164,92,1));
+}
+
+.rightBaloon {
+    color: #EFEFEF;
+    float: right;
+    background: #B0C9D3;
+    // .gradientTopBottom(#B0C9D3, #567F85);
+    .gradientTopBottom(rgb(125,185,232), rgba(30,87,153,1));
+}
+
+.leftBaloon, .rightBaloon {
+    clear: both;
+    max-width: 75%;
+    border-radius: 10 10;
+    border: 1px solid #ADADAD;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/********** End of Conversation Box ***************/
+
+
+
+/************* Search new friend ******************/
+.changeSearchSettings {
+    text-align: center;
+
+    h3 {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    button {
+        margin-top: -7px;
+    }
+}
+
+.changeSearchSettingsForm {
+
+    .buttonsContainer {
+        padding-top: 20px;
+        clear: both;
+        text-align: center;
+    }
+}
+
+.ageSeparator {
+    float: left;
+    width: 10px;
+    line-height: 34px;
+    text-align: center;
+}
+
+
+.friendSearchResultsContainer {
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    visiting-card:nth-child(5n+1) .visitingCard,    
+    visiting-card:nth-child(5n+2) .visitingCard,
+    visiting-card:nth-child(5n+3) .visitingCard,
+    visiting-card:nth-child(5n+4) .visitingCard {
+        margin-right: 40px;
+    }
+}
+
+
+.friendsView.friendSearchResultsContainer {
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    div:nth-child(5n+1) visiting-card .visitingCard,    
+    div:nth-child(5n+2) visiting-card .visitingCard,
+    div:nth-child(5n+3) visiting-card .visitingCard,
+    div:nth-child(5n+4) visiting-card .visitingCard {
+        margin-right: 40px;
+    }
+}
+
+.friendsView.friendSearchResultsContainer > div {
+    display: inline-block;
+}
+
+
+
+
+@visitingCardBorderRadius: 7px;
+
+.visitingCard {
+    margin-bottom: 40px;
+    width: 154px;
+    overflow: hidden;
+    border-radius: @visitingCardBorderRadius @visitingCardBorderRadius 
+        @visitingCardBorderRadius @visitingCardBorderRadius;
+    border: 1px solid #D0D0D0;
+    cursor: pointer;    
+    // float: left;
+    display: inline-block;
+    margin-left: -2px;
+
+    img {
+        border-bottom: 1px solid #D0D0D0;
+        width: 153px;
+        height: 145px;
+    }
+}
+
+.visitingCard > div {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+}
+
+
+
+.visitingCard .name {
+    font-size: 1.5em;
+}
+
+.visitingCard .basicInfo {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.visitingCard .country {
+    background-color: #E7E7E7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/************* End of Search new friend ******************/
+
+.gotTranslations {
+    background-color: rgb(69,184,141);
+}
