@@ -82,7 +82,7 @@
 				method: 'POST'
 			}
 		})
-		.send(that.locale, function (data) {
+		.send({locale: that.locale}, function (data) {
 			if (data['null']) {
 				console.log("Cannot fetch localization data for: " + locale);
 			} else {

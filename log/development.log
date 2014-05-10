@@ -12085,3 +12085,1036 @@ ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/
   Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
   Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
   Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (59.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-10 14:01:30 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 208ms (Views: 137.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-10 14:01:33 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:01:34 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (253.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (327.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateLocalizations (20140510121217)
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "localizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "localization" varchar(255), "fieldName" varchar(255), "value" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.0ms)[0m  INSERT INTO localization
+	(localization, fieldName, value)
+VALUES
+	('pl-pl', 'languageName', 'Polski'),
+	('en-us', 'languageName', 'English'),
+	('pl-pl', 'loginError', 'Podałeś nieprawidłowe dane!'),
+	('en-us', 'loginError', 'You have entered wrong credentials!'),
+ ('pl-pl', 'loginButton', 'Zaloguj'),
+	('en-us', 'loginButton', 'Login'),
+ ('pl-pl', 'rememberMe', 'Zapamiętaj mnie'),
+	('en-us', 'rememberMe', 'Remember me'),
+ ('pl-pl', 'email', 'Email'),
+	('en-us', 'email', 'Email'),
+ ('pl-pl', 'password', 'Hasło'),
+	('en-us', 'password', 'Password'),
+ ('pl-pl', 'loginChangePassword', 'Nie pamiętasz hasła?'),
+	('en-us', 'loginChangePassword', 'Forgot your password?'),
+ ('pl-pl', 'loginPageSlogan', 'Poznaj nowych przyjaciół z całego świata!'),
+	('en-us', 'loginPageSlogan', 'Meet new friends from all around of the world!'),
+ ('pl-pl', 'loginAddNewAccount', 'Załóż nowe konto'),
+	('en-us', 'loginAddNewAccount', 'Create a new account'),
+	('pl-pl', 'languageSelectBoxLabel', 'Zmień język'),
+	('en-us', 'languageSelectBoxLabel', 'Change language'),
+	('pl-pl', 'firstName', 'Imię'),
+	('en-us', 'firstName', 'First name'),
+	('pl-pl', 'lastName', 'Nazwisko'),
+	('en-us', 'lastName', 'Last name'),
+	('pl-pl', 'passwordRepeated', 'Powtórz hasło'),
+	('en-us', 'passwordRepeated', 'Repeat password'),
+	('pl-pl', 'registerButton', 'Zarejestruj'),
+	('en-us', 'registerButton', 'Register'),
+	('pl-pl', 'registrationError', 'Już istnieje użytkownik o tym adresie email!'),
+	('en-us', 'registrationError', 'User for given address email already exist!'),
+	('pl-pl', 'serverUnaviable', 'Nie można połączyć się z serwerem, spróbuj ponownie póniej.'),
+	('en-us', 'serverUnaviable', 'Cannot connect to remote server, please try again later.'),
+	('pl-pl', 'birthdate', 'Data urodzenia'),
+	('en-us', 'birthdate', 'Birth date'),
+	('pl-pl', 'confirmationSuccess', 'Twoja rejestracja została potwierdzona!'),
+	('en-us', 'confirmationSuccess', 'Your registration was confirmed!'),
+	('pl-pl', 'confirmationFailure', 'Twoja rejestracja została już potwierdzona lub link potwierdzający wygasł! W razie wygaśnięcia linku, zarejestruj się ponownie.'),
+	('en-us', 'confirmationFailure', 'Your registration is already confirmed or confirmation link expired! If your confirmation linki expired you need to register again.'),
+	('pl-pl', 'confirmationEmail', 'Dziękujemy za rejestracje w serwisie TalkToMe!
+Żeby potwierdzić swoją rejestrację kliknij w poniższy link:
+
+%s
+
+Jeżeli nie rejestrowałeś się w naszym portalu to zignoruj ten email.'),
+	('en-us', 'confirmationEmail', 'Thank you for your registration in TalkToMe!
+To confirm your registration click below link:
+
+%s
+
+If you have not registered in our service then ignore this email.'),
+	('pl-pl', 'registrationSuccess', 'Rejestracja powiodła się! Przejdź do swojej skrzynki pocztowej i potwierdź rejestracje.'),
+	('en-us', 'registrationSuccess', 'Registration succeeded!! Go to your mail box and confirm your registration.'),
+	('pl-pl', 'confirmationEmailSubject', 'Potwierdzenie rejestracji'),
+	('en-us', 'confirmationEmailSubject', 'Confirmation of registration'),
+	('pl-pl', 'changePasswordButton', 'Zmień'),
+	('en-us', 'changePasswordButton', 'Change'),
+	('pl-pl', 'changePasswordEmail', 'Aby zmienić hasło kliknij na poniższy link:
+
+%s
+
+Jeśli nie chcesz zmieniać hasła zignoruj tę wiadomość.'),
+	('en-us', 'changePasswordEmail', 'To change password clik link below:
+
+%s
+
+If you are no longer intrested in changing password then ignore this message.'),
+	('pl-pl', 'changePasswordEmailSubject', 'Zmiana hasła'),
+	('en-us', 'changePasswordEmailSubject', 'Change password'),
+	('pl-pl', 'changePasswordCodeGenerationInfo', 'Podaj adres email którego użyłeś podczas rejestracji:'),
+	('en-us', 'changePasswordCodeGenerationInfo', 'Insert email address which was used during registration:'),
+	('pl-pl', 'changePasswordInfo', 'Podaj nowe hasło:'),
+	('en-us', 'changePasswordInfo', 'Insert new password:'),
+	('pl-pl', 'changePasswordSuccess', 'Hasło zostało zmienione! Zachwile zostaniesz przekierowany do strony logowania.'),
+	('en-us', 'changePasswordSuccess', 'Password has changed! In few seconds you will be redirected to login page.'),
+	('pl-pl', 'changePasswordFailure', 'Zmiana hasła nie powiodłą się, spróbuj ponownie pónźiej'),
+	('en-us', 'changePasswordFailure', 'Changing password failed, try again later.'),
+	('pl-pl', 'codeGenerationSuccess', 'Link do zmiany hasła został wysłany na twoją skrzynke pocztową.'),
+	('en-us', 'codeGenerationSuccess', 'Link for changing password was sent to your email box.'),
+	('pl-pl', 'codeGenerationFailure', 'Generowanie linku do zmiany hasła nie powiodło się, spróbuj ponownie póniej.'),
+	('en-us', 'codeGenerationFailure', 'Generating link for password change failed, try again later.'),
+	('pl-pl', 'topMenuProfile', 'Profil'),
+	('en-us', 'topMenuProfile', 'Profile'),
+	('pl-pl', 'topMenuFind', 'Szukaj znajomych'),
+	('en-us', 'topMenuFind', 'Find friends'),
+	('pl-pl', 'topMenuConversation', 'Rozmowa'),
+	('en-us', 'topMenuConversation', 'Conversation'),
+	('pl-pl', 'topMenuFriends', 'Znajomi'),
+	('en-us', 'topMenuFriends', 'Friends'),
+	('pl-pl', 'logout', 'Wyloguj'),
+	('en-us', 'logout', 'Logout'),
+	('pl-pl', 'telephone', 'Telefon'),
+	('en-us', 'telephone', 'Telephone'),
+	('pl-pl', 'chooseCountries', 'Wybierz kraje'),
+	('en-us', 'chooseCountries', 'Choose countries'),
+	('pl-pl', 'chooseInterests', 'Wybierz zainteresowania'),
+	('en-us', 'chooseInterests', 'Choose interests'),
+	('pl-pl', 'aboutMe', 'O mnie'),
+	('en-us', 'aboutMe', 'About me'),
+	('pl-pl', 'aboutMeMsg', 'Napisz coś o sobie...'),
+	('en-us', 'aboutMeMsg', 'Write something about yourself...'),
+	('pl-pl', 'lookingForCountries', 'Szukam znajomości z'),
+	('en-us', 'lookingForCountries', 'I am looking for friends from'),
+	('pl-pl', 'myInterests', 'Moje zainteresowania'),
+	('en-us', 'myInterests', 'My interests'),
+	('pl-pl', 'contact', 'Kontakt'),
+	('en-us', 'contact', 'Contact'),
+	('pl-pl', 'defaultSearchSettingsMsg', 'Szukaj znajomych z domyślnymi ustawieniami'),
+	('en-us', 'defaultSearchSettingsMsg', 'Search friends with default search settings'),
+	('pl-pl', 'modifiedSearchSettingsMsg', 'Szukaj znajomych z modifikowanymi ustawieniami'),
+	('en-us', 'modifiedSearchSettingsMsg', 'Search friends with modified search settings'),
+	('pl-pl', 'change', 'Zmień'),
+	('en-us', 'change', 'Change'),
+	('pl-pl', 'changeSearchSettings', 'Użyj tych ustawień'),
+	('en-us', 'changeSearchSettings', 'Use this settings'),
+	('pl-pl', 'cancel', 'Anuluj'),
+	('en-us', 'cancel', 'Cancel'),
+	('pl-pl', 'fromCountries', 'Pochodzących z'),
+	('en-us', 'fromCountries', 'From'),
+	('pl-pl', 'interestedIn', 'Interesujących się'),
+	('en-us', 'interestedIn', 'Interested in'),
+	('pl-pl', 'inAge', 'W wieku'),
+	('en-us', 'inAge', 'In age'),
+	('pl-pl', 'men', 'Mężczyzn'),
+	('en-us', 'men', 'Men'),
+	('pl-pl', 'women', 'Kobiety'),
+	('en-us', 'women', 'Women'),
+	('pl-pl', 'sex', 'Płeć'),
+	('en-us', 'sex', 'Sex'),
+	('pl-pl', 'age', 'Wiek'),
+	('en-us', 'age', 'Age'),
+	('pl-pl', 'back', 'Wstecz'),
+	('en-us', 'back', 'Back'),
+	('pl-pl', 'wordForTranslation', 'Słowo do tłumaczenia'),
+	('en-us', 'wordForTranslation', 'Word for translation'),
+	('pl-pl', 'translation', 'Tłumaczenie'),
+	('en-us', 'translation', 'Translation'),
+	('pl-us', 'message', 'Wiadomość'),
+	('en-us', 'message', 'Message'),
+	('pl-pl', 'search', 'Szukaj'),
+	('en-us', 'search', 'Search'),
+	('pl-pl', 'invertLanguages', 'Odwróć'),
+	('en-us', 'invertLanguages', 'Invert'),
+	('pl-pl', 'addToFriendList', 'Dodaj do znajomych'),
+	('en-us', 'addToFriendList', 'Add to friend list'),
+	('pl-pl', 'poland', 'Polska'),
+	('en-us', 'poland', 'Poland'),
+	('pl-pl', 'USA', 'Stany zjednoczone'),
+	('en-us', 'USA', 'United states of America'),
+	('pl-pl', 'save', 'Zapisz'),
+	('en-us', 'save', 'Save'),
+	('pl-pl', 'deleteFromFriends', 'Usuń ze znajomych'),
+	('en-us', 'deleteFromFriends', 'Delete from friend list'),
+	('pl-pl', 'confirmFriend', 'Potwierdź'),
+	('en-us', 'confirmFriend', 'Confirm'),
+	('pl-pl', 'rejectFriend', 'Odrzuć'),
+	('en-us', 'rejectFriend', 'Reject');
+SQLite3::SQLException: no such table: localization: INSERT INTO localization
+	(localization, fieldName, value)
+VALUES
+	('pl-pl', 'languageName', 'Polski'),
+	('en-us', 'languageName', 'English'),
+	('pl-pl', 'loginError', 'Podałeś nieprawidłowe dane!'),
+	('en-us', 'loginError', 'You have entered wrong credentials!'),
+    ('pl-pl', 'loginButton', 'Zaloguj'),
+	('en-us', 'loginButton', 'Login'),
+    ('pl-pl', 'rememberMe', 'Zapamiętaj mnie'),
+	('en-us', 'rememberMe', 'Remember me'),
+    ('pl-pl', 'email', 'Email'),
+	('en-us', 'email', 'Email'),
+    ('pl-pl', 'password', 'Hasło'),
+	('en-us', 'password', 'Password'),
+    ('pl-pl', 'loginChangePassword', 'Nie pamiętasz hasła?'),
+	('en-us', 'loginChangePassword', 'Forgot your password?'),
+    ('pl-pl', 'loginPageSlogan', 'Poznaj nowych przyjaciół z całego świata!'),
+	('en-us', 'loginPageSlogan', 'Meet new friends from all around of the world!'),
+    ('pl-pl', 'loginAddNewAccount', 'Załóż nowe konto'),
+	('en-us', 'loginAddNewAccount', 'Create a new account'),
+	('pl-pl', 'languageSelectBoxLabel', 'Zmień język'),
+	('en-us', 'languageSelectBoxLabel', 'Change language'),
+	('pl-pl', 'firstName', 'Imię'),
+	('en-us', 'firstName', 'First name'),
+	('pl-pl', 'lastName', 'Nazwisko'),
+	('en-us', 'lastName', 'Last name'),
+	('pl-pl', 'passwordRepeated', 'Powtórz hasło'),
+	('en-us', 'passwordRepeated', 'Repeat password'),
+	('pl-pl', 'registerButton', 'Zarejestruj'),
+	('en-us', 'registerButton', 'Register'),
+	('pl-pl', 'registrationError', 'Już istnieje użytkownik o tym adresie email!'),
+	('en-us', 'registrationError', 'User for given address email already exist!'),
+	('pl-pl', 'serverUnaviable', 'Nie można połączyć się z serwerem, spróbuj ponownie póniej.'),
+	('en-us', 'serverUnaviable', 'Cannot connect to remote server, please try again later.'),
+	('pl-pl', 'birthdate', 'Data urodzenia'),
+	('en-us', 'birthdate', 'Birth date'),
+	('pl-pl', 'confirmationSuccess', 'Twoja rejestracja została potwierdzona!'),
+	('en-us', 'confirmationSuccess', 'Your registration was confirmed!'),
+	('pl-pl', 'confirmationFailure', 'Twoja rejestracja została już potwierdzona lub link potwierdzający wygasł! W razie wygaśnięcia linku, zarejestruj się ponownie.'),
+	('en-us', 'confirmationFailure', 'Your registration is already confirmed or confirmation link expired! If your confirmation linki expired you need to register again.'),
+	('pl-pl', 'confirmationEmail', 'Dziękujemy za rejestracje w serwisie TalkToMe!
+Żeby potwierdzić swoją rejestrację kliknij w poniższy link:
+
+%s
+
+Jeżeli nie rejestrowałeś się w naszym portalu to zignoruj ten email.'),
+	('en-us', 'confirmationEmail', 'Thank you for your registration in TalkToMe!
+To confirm your registration click below link:
+
+%s
+
+If you have not registered in our service then ignore this email.'),
+	('pl-pl', 'registrationSuccess', 'Rejestracja powiodła się! Przejdź do swojej skrzynki pocztowej i potwierdź rejestracje.'),
+	('en-us', 'registrationSuccess', 'Registration succeeded!! Go to your mail box and confirm your registration.'),
+	('pl-pl', 'confirmationEmailSubject', 'Potwierdzenie rejestracji'),
+	('en-us', 'confirmationEmailSubject', 'Confirmation of registration'),
+	('pl-pl', 'changePasswordButton', 'Zmień'),
+	('en-us', 'changePasswordButton', 'Change'),
+	('pl-pl', 'changePasswordEmail', 'Aby zmienić hasło kliknij na poniższy link:
+
+%s
+
+Jeśli nie chcesz zmieniać hasła zignoruj tę wiadomość.'),
+	('en-us', 'changePasswordEmail', 'To change password clik link below:
+
+%s
+
+If you are no longer intrested in changing password then ignore this message.'),
+	('pl-pl', 'changePasswordEmailSubject', 'Zmiana hasła'),
+	('en-us', 'changePasswordEmailSubject', 'Change password'),
+	('pl-pl', 'changePasswordCodeGenerationInfo', 'Podaj adres email którego użyłeś podczas rejestracji:'),
+	('en-us', 'changePasswordCodeGenerationInfo', 'Insert email address which was used during registration:'),
+	('pl-pl', 'changePasswordInfo', 'Podaj nowe hasło:'),
+	('en-us', 'changePasswordInfo', 'Insert new password:'),
+	('pl-pl', 'changePasswordSuccess', 'Hasło zostało zmienione! Zachwile zostaniesz przekierowany do strony logowania.'),
+	('en-us', 'changePasswordSuccess', 'Password has changed! In few seconds you will be redirected to login page.'),
+	('pl-pl', 'changePasswordFailure', 'Zmiana hasła nie powiodłą się, spróbuj ponownie pónźiej'),
+	('en-us', 'changePasswordFailure', 'Changing password failed, try again later.'),
+	('pl-pl', 'codeGenerationSuccess', 'Link do zmiany hasła został wysłany na twoją skrzynke pocztową.'),
+	('en-us', 'codeGenerationSuccess', 'Link for changing password was sent to your email box.'),
+	('pl-pl', 'codeGenerationFailure', 'Generowanie linku do zmiany hasła nie powiodło się, spróbuj ponownie póniej.'),
+	('en-us', 'codeGenerationFailure', 'Generating link for password change failed, try again later.'),
+	('pl-pl', 'topMenuProfile', 'Profil'),
+	('en-us', 'topMenuProfile', 'Profile'),
+	('pl-pl', 'topMenuFind', 'Szukaj znajomych'),
+	('en-us', 'topMenuFind', 'Find friends'),
+	('pl-pl', 'topMenuConversation', 'Rozmowa'),
+	('en-us', 'topMenuConversation', 'Conversation'),
+	('pl-pl', 'topMenuFriends', 'Znajomi'),
+	('en-us', 'topMenuFriends', 'Friends'),
+	('pl-pl', 'logout', 'Wyloguj'),
+	('en-us', 'logout', 'Logout'),
+	('pl-pl', 'telephone', 'Telefon'),
+	('en-us', 'telephone', 'Telephone'),
+	('pl-pl', 'chooseCountries', 'Wybierz kraje'),
+	('en-us', 'chooseCountries', 'Choose countries'),
+	('pl-pl', 'chooseInterests', 'Wybierz zainteresowania'),
+	('en-us', 'chooseInterests', 'Choose interests'),
+	('pl-pl', 'aboutMe', 'O mnie'),
+	('en-us', 'aboutMe', 'About me'),
+	('pl-pl', 'aboutMeMsg', 'Napisz coś o sobie...'),
+	('en-us', 'aboutMeMsg', 'Write something about yourself...'),
+	('pl-pl', 'lookingForCountries', 'Szukam znajomości z'),
+	('en-us', 'lookingForCountries', 'I am looking for friends from'),
+	('pl-pl', 'myInterests', 'Moje zainteresowania'),
+	('en-us', 'myInterests', 'My interests'),
+	('pl-pl', 'contact', 'Kontakt'),
+	('en-us', 'contact', 'Contact'),
+	('pl-pl', 'defaultSearchSettingsMsg', 'Szukaj znajomych z domyślnymi ustawieniami'),
+	('en-us', 'defaultSearchSettingsMsg', 'Search friends with default search settings'),
+	('pl-pl', 'modifiedSearchSettingsMsg', 'Szukaj znajomych z modifikowanymi ustawieniami'),
+	('en-us', 'modifiedSearchSettingsMsg', 'Search friends with modified search settings'),
+	('pl-pl', 'change', 'Zmień'),
+	('en-us', 'change', 'Change'),
+	('pl-pl', 'changeSearchSettings', 'Użyj tych ustawień'),
+	('en-us', 'changeSearchSettings', 'Use this settings'),
+	('pl-pl', 'cancel', 'Anuluj'),
+	('en-us', 'cancel', 'Cancel'),
+	('pl-pl', 'fromCountries', 'Pochodzących z'),
+	('en-us', 'fromCountries', 'From'),
+	('pl-pl', 'interestedIn', 'Interesujących się'),
+	('en-us', 'interestedIn', 'Interested in'),
+	('pl-pl', 'inAge', 'W wieku'),
+	('en-us', 'inAge', 'In age'),
+	('pl-pl', 'men', 'Mężczyzn'),
+	('en-us', 'men', 'Men'),
+	('pl-pl', 'women', 'Kobiety'),
+	('en-us', 'women', 'Women'),
+	('pl-pl', 'sex', 'Płeć'),
+	('en-us', 'sex', 'Sex'),
+	('pl-pl', 'age', 'Wiek'),
+	('en-us', 'age', 'Age'),
+	('pl-pl', 'back', 'Wstecz'),
+	('en-us', 'back', 'Back'),
+	('pl-pl', 'wordForTranslation', 'Słowo do tłumaczenia'),
+	('en-us', 'wordForTranslation', 'Word for translation'),
+	('pl-pl', 'translation', 'Tłumaczenie'),
+	('en-us', 'translation', 'Translation'),
+	('pl-us', 'message', 'Wiadomość'),
+	('en-us', 'message', 'Message'),
+	('pl-pl', 'search', 'Szukaj'),
+	('en-us', 'search', 'Search'),
+	('pl-pl', 'invertLanguages', 'Odwróć'),
+	('en-us', 'invertLanguages', 'Invert'),
+	('pl-pl', 'addToFriendList', 'Dodaj do znajomych'),
+	('en-us', 'addToFriendList', 'Add to friend list'),
+	('pl-pl', 'poland', 'Polska'),
+	('en-us', 'poland', 'Poland'),
+	('pl-pl', 'USA', 'Stany zjednoczone'),
+	('en-us', 'USA', 'United states of America'),
+	('pl-pl', 'save', 'Zapisz'),
+	('en-us', 'save', 'Save'),
+	('pl-pl', 'deleteFromFriends', 'Usuń ze znajomych'),
+	('en-us', 'deleteFromFriends', 'Delete from friend list'),
+	('pl-pl', 'confirmFriend', 'Potwierdź'),
+	('en-us', 'confirmFriend', 'Confirm'),
+	('pl-pl', 'rejectFriend', 'Odrzuć'),
+	('en-us', 'rejectFriend', 'Reject');
+  [1m[36m (6.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateLocalizations (20140510121217)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "localizations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "localization" varchar(255), "fieldName" varchar(255), "value" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.0ms)[0m  INSERT INTO localizations
+	(localization, fieldName, value)
+VALUES
+	('pl-pl', 'languageName', 'Polski'),
+	('en-us', 'languageName', 'English'),
+	('pl-pl', 'loginError', 'Podałeś nieprawidłowe dane!'),
+	('en-us', 'loginError', 'You have entered wrong credentials!'),
+ ('pl-pl', 'loginButton', 'Zaloguj'),
+	('en-us', 'loginButton', 'Login'),
+ ('pl-pl', 'rememberMe', 'Zapamiętaj mnie'),
+	('en-us', 'rememberMe', 'Remember me'),
+ ('pl-pl', 'email', 'Email'),
+	('en-us', 'email', 'Email'),
+ ('pl-pl', 'password', 'Hasło'),
+	('en-us', 'password', 'Password'),
+ ('pl-pl', 'loginChangePassword', 'Nie pamiętasz hasła?'),
+	('en-us', 'loginChangePassword', 'Forgot your password?'),
+ ('pl-pl', 'loginPageSlogan', 'Poznaj nowych przyjaciół z całego świata!'),
+	('en-us', 'loginPageSlogan', 'Meet new friends from all around of the world!'),
+ ('pl-pl', 'loginAddNewAccount', 'Załóż nowe konto'),
+	('en-us', 'loginAddNewAccount', 'Create a new account'),
+	('pl-pl', 'languageSelectBoxLabel', 'Zmień język'),
+	('en-us', 'languageSelectBoxLabel', 'Change language'),
+	('pl-pl', 'firstName', 'Imię'),
+	('en-us', 'firstName', 'First name'),
+	('pl-pl', 'lastName', 'Nazwisko'),
+	('en-us', 'lastName', 'Last name'),
+	('pl-pl', 'passwordRepeated', 'Powtórz hasło'),
+	('en-us', 'passwordRepeated', 'Repeat password'),
+	('pl-pl', 'registerButton', 'Zarejestruj'),
+	('en-us', 'registerButton', 'Register'),
+	('pl-pl', 'registrationError', 'Już istnieje użytkownik o tym adresie email!'),
+	('en-us', 'registrationError', 'User for given address email already exist!'),
+	('pl-pl', 'serverUnaviable', 'Nie można połączyć się z serwerem, spróbuj ponownie póniej.'),
+	('en-us', 'serverUnaviable', 'Cannot connect to remote server, please try again later.'),
+	('pl-pl', 'birthdate', 'Data urodzenia'),
+	('en-us', 'birthdate', 'Birth date'),
+	('pl-pl', 'confirmationSuccess', 'Twoja rejestracja została potwierdzona!'),
+	('en-us', 'confirmationSuccess', 'Your registration was confirmed!'),
+	('pl-pl', 'confirmationFailure', 'Twoja rejestracja została już potwierdzona lub link potwierdzający wygasł! W razie wygaśnięcia linku, zarejestruj się ponownie.'),
+	('en-us', 'confirmationFailure', 'Your registration is already confirmed or confirmation link expired! If your confirmation linki expired you need to register again.'),
+	('pl-pl', 'confirmationEmail', 'Dziękujemy za rejestracje w serwisie TalkToMe!
+Żeby potwierdzić swoją rejestrację kliknij w poniższy link:
+
+%s
+
+Jeżeli nie rejestrowałeś się w naszym portalu to zignoruj ten email.'),
+	('en-us', 'confirmationEmail', 'Thank you for your registration in TalkToMe!
+To confirm your registration click below link:
+
+%s
+
+If you have not registered in our service then ignore this email.'),
+	('pl-pl', 'registrationSuccess', 'Rejestracja powiodła się! Przejdź do swojej skrzynki pocztowej i potwierdź rejestracje.'),
+	('en-us', 'registrationSuccess', 'Registration succeeded!! Go to your mail box and confirm your registration.'),
+	('pl-pl', 'confirmationEmailSubject', 'Potwierdzenie rejestracji'),
+	('en-us', 'confirmationEmailSubject', 'Confirmation of registration'),
+	('pl-pl', 'changePasswordButton', 'Zmień'),
+	('en-us', 'changePasswordButton', 'Change'),
+	('pl-pl', 'changePasswordEmail', 'Aby zmienić hasło kliknij na poniższy link:
+
+%s
+
+Jeśli nie chcesz zmieniać hasła zignoruj tę wiadomość.'),
+	('en-us', 'changePasswordEmail', 'To change password clik link below:
+
+%s
+
+If you are no longer intrested in changing password then ignore this message.'),
+	('pl-pl', 'changePasswordEmailSubject', 'Zmiana hasła'),
+	('en-us', 'changePasswordEmailSubject', 'Change password'),
+	('pl-pl', 'changePasswordCodeGenerationInfo', 'Podaj adres email którego użyłeś podczas rejestracji:'),
+	('en-us', 'changePasswordCodeGenerationInfo', 'Insert email address which was used during registration:'),
+	('pl-pl', 'changePasswordInfo', 'Podaj nowe hasło:'),
+	('en-us', 'changePasswordInfo', 'Insert new password:'),
+	('pl-pl', 'changePasswordSuccess', 'Hasło zostało zmienione! Zachwile zostaniesz przekierowany do strony logowania.'),
+	('en-us', 'changePasswordSuccess', 'Password has changed! In few seconds you will be redirected to login page.'),
+	('pl-pl', 'changePasswordFailure', 'Zmiana hasła nie powiodłą się, spróbuj ponownie pónźiej'),
+	('en-us', 'changePasswordFailure', 'Changing password failed, try again later.'),
+	('pl-pl', 'codeGenerationSuccess', 'Link do zmiany hasła został wysłany na twoją skrzynke pocztową.'),
+	('en-us', 'codeGenerationSuccess', 'Link for changing password was sent to your email box.'),
+	('pl-pl', 'codeGenerationFailure', 'Generowanie linku do zmiany hasła nie powiodło się, spróbuj ponownie póniej.'),
+	('en-us', 'codeGenerationFailure', 'Generating link for password change failed, try again later.'),
+	('pl-pl', 'topMenuProfile', 'Profil'),
+	('en-us', 'topMenuProfile', 'Profile'),
+	('pl-pl', 'topMenuFind', 'Szukaj znajomych'),
+	('en-us', 'topMenuFind', 'Find friends'),
+	('pl-pl', 'topMenuConversation', 'Rozmowa'),
+	('en-us', 'topMenuConversation', 'Conversation'),
+	('pl-pl', 'topMenuFriends', 'Znajomi'),
+	('en-us', 'topMenuFriends', 'Friends'),
+	('pl-pl', 'logout', 'Wyloguj'),
+	('en-us', 'logout', 'Logout'),
+	('pl-pl', 'telephone', 'Telefon'),
+	('en-us', 'telephone', 'Telephone'),
+	('pl-pl', 'chooseCountries', 'Wybierz kraje'),
+	('en-us', 'chooseCountries', 'Choose countries'),
+	('pl-pl', 'chooseInterests', 'Wybierz zainteresowania'),
+	('en-us', 'chooseInterests', 'Choose interests'),
+	('pl-pl', 'aboutMe', 'O mnie'),
+	('en-us', 'aboutMe', 'About me'),
+	('pl-pl', 'aboutMeMsg', 'Napisz coś o sobie...'),
+	('en-us', 'aboutMeMsg', 'Write something about yourself...'),
+	('pl-pl', 'lookingForCountries', 'Szukam znajomości z'),
+	('en-us', 'lookingForCountries', 'I am looking for friends from'),
+	('pl-pl', 'myInterests', 'Moje zainteresowania'),
+	('en-us', 'myInterests', 'My interests'),
+	('pl-pl', 'contact', 'Kontakt'),
+	('en-us', 'contact', 'Contact'),
+	('pl-pl', 'defaultSearchSettingsMsg', 'Szukaj znajomych z domyślnymi ustawieniami'),
+	('en-us', 'defaultSearchSettingsMsg', 'Search friends with default search settings'),
+	('pl-pl', 'modifiedSearchSettingsMsg', 'Szukaj znajomych z modifikowanymi ustawieniami'),
+	('en-us', 'modifiedSearchSettingsMsg', 'Search friends with modified search settings'),
+	('pl-pl', 'change', 'Zmień'),
+	('en-us', 'change', 'Change'),
+	('pl-pl', 'changeSearchSettings', 'Użyj tych ustawień'),
+	('en-us', 'changeSearchSettings', 'Use this settings'),
+	('pl-pl', 'cancel', 'Anuluj'),
+	('en-us', 'cancel', 'Cancel'),
+	('pl-pl', 'fromCountries', 'Pochodzących z'),
+	('en-us', 'fromCountries', 'From'),
+	('pl-pl', 'interestedIn', 'Interesujących się'),
+	('en-us', 'interestedIn', 'Interested in'),
+	('pl-pl', 'inAge', 'W wieku'),
+	('en-us', 'inAge', 'In age'),
+	('pl-pl', 'men', 'Mężczyzn'),
+	('en-us', 'men', 'Men'),
+	('pl-pl', 'women', 'Kobiety'),
+	('en-us', 'women', 'Women'),
+	('pl-pl', 'sex', 'Płeć'),
+	('en-us', 'sex', 'Sex'),
+	('pl-pl', 'age', 'Wiek'),
+	('en-us', 'age', 'Age'),
+	('pl-pl', 'back', 'Wstecz'),
+	('en-us', 'back', 'Back'),
+	('pl-pl', 'wordForTranslation', 'Słowo do tłumaczenia'),
+	('en-us', 'wordForTranslation', 'Word for translation'),
+	('pl-pl', 'translation', 'Tłumaczenie'),
+	('en-us', 'translation', 'Translation'),
+	('pl-us', 'message', 'Wiadomość'),
+	('en-us', 'message', 'Message'),
+	('pl-pl', 'search', 'Szukaj'),
+	('en-us', 'search', 'Search'),
+	('pl-pl', 'invertLanguages', 'Odwróć'),
+	('en-us', 'invertLanguages', 'Invert'),
+	('pl-pl', 'addToFriendList', 'Dodaj do znajomych'),
+	('en-us', 'addToFriendList', 'Add to friend list'),
+	('pl-pl', 'poland', 'Polska'),
+	('en-us', 'poland', 'Poland'),
+	('pl-pl', 'USA', 'Stany zjednoczone'),
+	('en-us', 'USA', 'United states of America'),
+	('pl-pl', 'save', 'Zapisz'),
+	('en-us', 'save', 'Save'),
+	('pl-pl', 'deleteFromFriends', 'Usuń ze znajomych'),
+	('en-us', 'deleteFromFriends', 'Delete from friend list'),
+	('pl-pl', 'confirmFriend', 'Potwierdź'),
+	('en-us', 'confirmFriend', 'Confirm'),
+	('pl-pl', 'rejectFriend', 'Odrzuć'),
+	('en-us', 'rejectFriend', 'Reject');
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140510121217"]]
+  [1m[35m (213.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-10 14:28:46 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (236.1ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (528.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-10 14:28:53 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:28:54 +0200
+
+RuntimeError (`attr_accessible` is extracted out of Rails into a gem. Please use new recommended protection model for params(strong_parameters) or add `protected_attributes` to your Gemfile to use old one.):
+  app/models/localization.rb:2:in `<class:Localization>'
+  app/models/localization.rb:1:in `<top (required)>'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (72.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-10 14:28:54 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-10 14:31:28 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:31:29 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+  [1m[35mLocalization Load (0.0ms)[0m  SELECT "localizations".* FROM "localizations" WHERE "localizations"."fieldName" = 'languageName'
+Completed 200 OK in 84ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-10 14:31:29 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (47.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-10 14:33:46 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:33:47 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+  [1m[36mLocalization Load (2.0ms)[0m  [1mSELECT "localizations".* FROM "localizations" WHERE "localizations"."fieldName" = 'languageName'[0m
+Completed 200 OK in 49ms (Views: 44.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-10 14:33:47 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (109.1ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:33:47 +0200
+Error occurred while parsing request parameters.
+Contents:
+
+en-us
+
+ActionDispatch::ParamsParser::ParseError (795: unexpected token at 'en-us'):
+  actionpack (4.0.3) lib/action_dispatch/middleware/params_parser.rb:53:in `rescue in parse_formatted_parameters'
+  actionpack (4.0.3) lib/action_dispatch/middleware/params_parser.rb:32:in `parse_formatted_parameters'
+  actionpack (4.0.3) lib/action_dispatch/middleware/params_parser.rb:23:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.3) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:373:in `_run__629882046__call__callbacks'
+  activesupport (4.0.3) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (23.2ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.1ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (103.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-10 14:39:11 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:39:12 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+  [1m[35mLocalization Load (1.0ms)[0m  SELECT "localizations".* FROM "localizations" WHERE "localizations"."fieldName" = 'languageName'
+Completed 200 OK in 27ms (Views: 12.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-10 14:39:12 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:39:13 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"locale"=>"en-us", "localization"=>{}}
+  [1m[36mLocalization Load (0.0ms)[0m  [1mSELECT "localizations".* FROM "localizations" WHERE "localizations"."fieldName" = 'languageName'[0m
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-10 14:48:13 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:48:14 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+Completed 500 Internal Server Error in 29ms
+
+NoMethodError (undefined method `locale' for #<ActionController::Parameters:0x29609b8>):
+  app/controllers/localization_controller.rb:8:in `localization'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-10 14:48:14 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (52.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-10 14:49:00 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:49:00 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+  [1m[35mLocalization Load (1.0ms)[0m  SELECT "localizations".* FROM "localizations" WHERE "localizations"."localization" IS NULL
+Completed 200 OK in 45ms (Views: 0.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-10 14:49:01 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (81.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-10 14:50:51 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:50:52 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+  [1m[36mLocalization Load (0.0ms)[0m  [1mSELECT "localizations".* FROM "localizations" WHERE "localizations"."fieldName" = 'languageName'[0m
+Completed 200 OK in 77ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-10 14:50:52 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:50:52 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"locale"=>"pl-pl", "localization"=>{}}
+  [1m[35mLocalization Load (1.0ms)[0m  SELECT "localizations".* FROM "localizations" WHERE "localizations"."localization" = 'pl-pl'
+Completed 500 Internal Server Error in 57ms
+
+NoMethodError (undefined method `lvalue' for #<Localization:0x610fde8>):
+  app/controllers/localization_controller.rb:9:in `block in localization'
+  app/controllers/localization_controller.rb:8:in `localization'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (14.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (90.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-10 14:51:20 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:51:20 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"localization"=>{}}
+  [1m[36mLocalization Load (0.0ms)[0m  [1mSELECT "localizations".* FROM "localizations" WHERE "localizations"."fieldName" = 'languageName'[0m
+Completed 200 OK in 25ms (Views: 0.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/html/js/vendors/jquery/jquery-2.0.3.min.map" for 127.0.0.1 at 2014-05-10 14:51:21 +0200
+
+ActionController::RoutingError (No route matches [GET] "/html/js/vendors/jquery/jquery-2.0.3.min.map"):
+  actionpack (4.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.3) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.3) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.3) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.3) lib/rails/engine.rb:511:in `call'
+  railties (4.0.3) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:51:21 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"locale"=>"pl-pl", "localization"=>{}}
+  [1m[35mLocalization Load (0.0ms)[0m  SELECT "localizations".* FROM "localizations" WHERE "localizations"."localization" = 'pl-pl'
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:51:29 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"locale"=>"en-us", "localization"=>{}}
+  [1m[36mLocalization Load (0.0ms)[0m  [1mSELECT "localizations".* FROM "localizations" WHERE "localizations"."localization" = 'en-us'[0m
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/service/localization" for 127.0.0.1 at 2014-05-10 14:51:33 +0200
+Processing by LocalizationController#localization as HTML
+  Parameters: {"locale"=>"pl-pl", "localization"=>{}}
+  [1m[35mLocalization Load (0.0ms)[0m  SELECT "localizations".* FROM "localizations" WHERE "localizations"."localization" = 'pl-pl'
+Completed 200 OK in 9ms (Views: 3.0ms | ActiveRecord: 0.0ms)
