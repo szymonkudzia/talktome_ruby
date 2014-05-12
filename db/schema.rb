@@ -11,12 +11,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140510121217) do
+ActiveRecord::Schema.define(version: 20140512192905) do
 
   create_table "localizations", force: true do |t|
     t.string   "localization"
     t.string   "fieldName"
     t.string   "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "email"
+    t.string   "password"
+    t.string   "country"
+    t.date     "birthdate"
+    t.string   "firstName"
+    t.string   "lastName"
+    t.string   "profilePicture", default: "html/img/noProfilePicture.png"
+    t.integer  "men",            default: 1
+    t.integer  "women",          default: 1
+    t.integer  "sex",            default: 1
+    t.string   "aboutMe"
+    t.string   "telephone"
+    t.string   "facebook"
+    t.string   "googlep"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users_not_confirmed", force: true do |t|
+    t.integer  "userId"
+    t.string   "code"
+    t.datetime "dateInserted"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -2,6 +2,9 @@ TalkToMe::Application.routes.draw do
   root "main#index"
 
   post "service/localization" => "localization#localization"
+  post "service/register" => "register#register"
+  get "service/confirm" => "confirm#confirm"
+  post "service/login" => "login#login"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
