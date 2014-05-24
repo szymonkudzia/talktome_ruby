@@ -1,4 +1,4 @@
-class CreateUserNotConfirmed < ActiveRecord::Migration
+class CreateUsersNotConfirmed < ActiveRecord::Migration
   def change
     create_table :users_not_confirmed do |t|
   		t.integer :userId

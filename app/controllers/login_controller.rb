@@ -10,7 +10,9 @@ class LoginController < BaseController
 	if user
 		if !UserNotConfirmed.where(userId: user.id).first
 			user.password = nil
-			# user['birthdate'] = user['birthdate'].strftime("%Y-%m-%d %H:%M:%S")
+			user = user.attributes
+
+			user['birthdate'] = user['birthdate'].strftime("%Y-%m-%d %H:%M:%S")
 			render :json => decorateUser(user)
 			return
 		end
@@ -20,6 +22,25 @@ class LoginController < BaseController
   end
 
   def decorateUser(user)
-  	return user
+    countries = []
+    Interest.getCountriesForUser(user['id']).each do |c|
+    	country = c.attributes
+
+        country['name'] = Localization.getTranslationFor(country['countryLabel'], user['country'])
+        countries.append(country)
+    end
+
+
+    interests = []
+    Interest.getInterestsForUser(user['id']).each do |i|
+    	interests = i.attributes
+        interests.append(interest)
+    end
+
+
+    user['countries'] = countries
+    user['interests'] = interests
+    
+    return user
   end
 end

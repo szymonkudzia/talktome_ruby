@@ -5,6 +5,19 @@ TalkToMe::Application.routes.draw do
   post "service/register" => "register#register"
   get "service/confirm" => "confirm#confirm"
   post "service/login" => "login#login"
+  post "service/getCountries" => "get_countries#getCountries"
+  post "service/deleteFriend" => "delete_friend#deleteFriend"
+  post "service/getMessages" => "get_messages#getMessages"
+  post "service/getNewMessages" => "get_new_messages#getNewMessages"
+  post "service/sendMessage" => "send_message#sendMessage"
+  post "service/updateUser" => "update_user#updateUser"
+  post "service/translateText" => "google_translator#googleTranslator"
+  post "service/confirmFriend" => "confirm_friend#confirmFriend"
+  post "service/addFriend" => "add_friend#addFriend"
+  post "service/searchPeople" => "search_people#searchPeople"
+  post "service/getFriendList" => "get_friend_list#getFriendList"
+
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -5,7 +5,7 @@
 		user: {},
 		localization: {},
 	};
-	this.storage = localStorage;
+	this.storage = sessionStorage;
 
 	this.reloadFriendList = function () {
 		FriendListService.getFriendList(that.session.user.id, function (friends) {

@@ -11,12 +11,59 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140512192905) do
+ActiveRecord::Schema.define(version: 20140524102135) do
+
+  create_table "countries", force: true do |t|
+    t.string   "countryCode"
+    t.string   "countryLabel"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "friends", force: true do |t|
+    t.integer  "user_1"
+    t.integer  "user_2"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "friends_unconfirmed", force: true do |t|
+    t.integer  "user_1"
+    t.integer  "user_2"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "interests", force: true do |t|
+    t.integer  "userId"
+    t.integer  "type",       default: 0
+    t.string   "interest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "localizations", force: true do |t|
     t.string   "localization"
     t.string   "fieldName"
     t.string   "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "messages", force: true do |t|
+    t.integer  "from"
+    t.integer  "to"
+    t.string   "message"
+    t.datetime "dateInserted"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "new_messages", force: true do |t|
+    t.integer  "from"
+    t.integer  "to"
+    t.string   "message"
+    t.datetime "dateInserted", default: '2014-05-24 13:13:35'
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -43,7 +90,7 @@ ActiveRecord::Schema.define(version: 20140512192905) do
   create_table "users_not_confirmed", force: true do |t|
     t.integer  "userId"
     t.string   "code"
-    t.datetime "dateInserted"
+    t.datetime "dateInserted", default: '2014-05-24 13:13:34'
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,2 @@
+module DeleteFriendHelper
+end

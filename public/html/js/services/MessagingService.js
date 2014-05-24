@@ -20,7 +20,7 @@ talkToMeApp.service('MessagingService', function ($resource, $locale) {
 				method: 'POST', isArray:true
 			}
 		})
-		.get(userId, function (newMessages) {
+		.get({userId: userId}, function (newMessages) {
 			if (newMessages.length > 0) { 
 				console.log("Fetched new messages: ", newMessages);
 

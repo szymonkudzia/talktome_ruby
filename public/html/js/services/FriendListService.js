@@ -7,7 +7,7 @@ talkToMeApp.service('FriendListService', function ($resource, $locale) {
 				method: 'POST', isArray: true
 			}
 		})
-		.get(userId, function (friends) {
+		.get({userId: userId}, function (friends) {
 			console.log("Fetched friends list for userId: " + userId, friends);
 
 			successCallback(friends, userId);

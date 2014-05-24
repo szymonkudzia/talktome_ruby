@@ -3,7 +3,7 @@
 <div class="slideInPageContainer fill-x">
 	<div id="search" class="col-md-12 no-padding">
 		<ul class="nav nav-pills">
-			<li ng-class="{active: confirmed}"><a ng-click="changeFriendsType(1)">Potwierdzni</a></li>
+			<li ng-class="{active: confirmed}"><a ng-click="changeFriendsType(1)">Potwierdzeni</a></li>
 			<li ng-class="{active: !confirmed}"><a ng-click="changeFriendsType(2)">Nie potwierdzeni</a></li>
 		</ul>
 
@@ -45,7 +45,7 @@
 			</button>
 
 
-			<button ng-if="!confirmed" class="btn btn-warning border-color" style="float: right; margin-right: 10px" ng-click="$parent.confirmFriend()">
+			<button ng-if="!confirmed && selectedPerson.needsUserConfirmation" class="btn btn-warning border-color" style="float: right; margin-right: 10px" ng-click="$parent.confirmFriend()">
 				{{session.localization.confirmFriend}}
 			</button>
 			

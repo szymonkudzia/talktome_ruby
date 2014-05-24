@@ -1,0 +1,2 @@
+module GetFriendListHelper
+end
