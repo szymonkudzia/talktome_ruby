@@ -18,7 +18,7 @@ TalkToMe::Application.routes.draw do
   post "service/getFriendList" => "get_friend_list#getFriendList"
   post "service/changeProfilePicture" => "change_profile_picture#changeProfilePicture"
 
-  
+  get "service/history" => "generate_history#generate"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

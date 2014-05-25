@@ -4,7 +4,7 @@ require "CSV"
 class GenerateHistoryController < BaseController
 	def generate
 	    userId = 1 # params['userId']
-		friendId = 2 # params['friendId']
+		friendId = 3 # params['friendId']
 		
 		respond_to do |format|
 			format.pdf do
@@ -90,12 +90,11 @@ class GenerateHistoryController < BaseController
 			u2 = u2.firstName + " " + u2.lastName
 			
 			messages = Message.where("([to] = ? and [from] = ?) or ([to] = ? and [from] = ?)", userId, friendId, friendId, userId).order(:created_at).each do |msg| 
-					csv << [
-						msg.from == userID ? u1 : u2,
-						msg.created_at.to_s,
-						msg.message
-					]
-				end
+				csv << [
+					msg.from == userId ? u1 : u2,
+					msg.created_at.to_s,
+					msg.message
+				]
 			end
 		end
 		return csv
