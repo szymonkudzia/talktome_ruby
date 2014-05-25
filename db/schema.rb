@@ -75,16 +75,17 @@ ActiveRecord::Schema.define(version: 20140524102135) do
     t.date     "birthdate"
     t.string   "firstName"
     t.string   "lastName"
-    t.string   "profilePicture", default: "html/img/noProfilePicture.png"
-    t.integer  "men",            default: 1
-    t.integer  "women",          default: 1
-    t.integer  "sex",            default: 1
+    t.string   "profilePicture",             default: "html/img/noProfilePicture.png"
+    t.integer  "men",                        default: 1
+    t.integer  "women",                      default: 1
+    t.integer  "sex",                        default: 1
     t.string   "aboutMe"
     t.string   "telephone"
     t.string   "facebook"
     t.string   "googlep"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "salt",           limit: nil
   end
 
   create_table "users_not_confirmed", force: true do |t|

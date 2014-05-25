@@ -1,18 +1,23 @@
 require 'mail'
+require 'digest/sha1'
+require 'securerandom'
 
 class RegisterController < BaseController
   def register
   		u = params
 
 		user = User.new()
+		
+		salt = SecureRandom.hex
 
 		user.email = u['email']
-  		user.password = u['password']
+  		user.password = Digest::SHA1.hexdigest(u['password']+salt)
   		user.country = u['country']
   		user.birthdate = u['birthdate']
   		user.firstName = u['firstName']
   		user.lastName = u['lastName']
-
+		user.salt = salt
+		
   		user.save()
 
   		puts user.id

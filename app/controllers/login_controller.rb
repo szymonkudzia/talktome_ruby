@@ -1,3 +1,5 @@
+require 'digest/sha1'
+
 class LoginController < BaseController
   def login
 	if !params['email'] and params['password']
@@ -5,12 +7,22 @@ class LoginController < BaseController
 		return
 	end
 
-	user = User.where(email: params['email'], password: params['password']).first
+	user = User.where(email: params['email']).first
 
 	if user
+	
+		sha1=Digest::SHA1.hexdigest(params['password']+user.salt)
+		
+		if sha1!=user.password
+			render :json => {"null" => "true"}
+			return
+		end
+		
+			
 		if !UserNotConfirmed.where(userId: user.id).first
 			user.password = nil
 			user = user.attributes
+			
 
 
 			if user['birthdate']

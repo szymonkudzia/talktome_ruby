@@ -15,16 +15,17 @@ class CreateUsers < ActiveRecord::Migration
   		t.string :telephone
   		t.string :facebook
   		t.string :googlep
+		t.string :salt
 
       t.timestamps
     end
 
     execute "INSERT INTO users
-                (email, password, country, firstName, lastName, 'birthdate')
+                (email, password, country, firstName, lastName, 'birthdate', 'salt')
              VALUES
-                ('admin1@ttm.com', 'admin1', 'pl-pl', 'Brad', 'Pit', '1990-12-31'),
-                ('admin2@ttm.com', 'admin2', 'en-us', 'Angelina', 'Jole', '1990-12-31'),
-                ('admin3@ttm.com', 'admin3', 'pl-pl', 'Jozin', 'Z Bazin', '1990-12-31');"
+                ('admin1@ttm.com', 'admin1', 'pl-pl', 'Brad', 'Pit', '1990-12-31', 'test'),
+                ('admin2@ttm.com', 'admin2', 'en-us', 'Angelina', 'Jole', '1990-12-31', 'test'),
+                ('admin3@ttm.com', 'admin3', 'pl-pl', 'Jozin', 'Z Bazin', '1990-12-31', 'test');"
 
   end
 end
