@@ -16,6 +16,7 @@ TalkToMe::Application.routes.draw do
   post "service/addFriend" => "add_friend#addFriend"
   post "service/searchPeople" => "search_people#searchPeople"
   post "service/getFriendList" => "get_friend_list#getFriendList"
+  post "service/changeProfilePicture" => "change_profile_picture#changeProfilePicture"
 
   
 

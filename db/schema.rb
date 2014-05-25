@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20140524102135) do
 
   create_table "interests", force: true do |t|
     t.integer  "userId"
-    t.integer  "type",       default: 0
+    t.integer  "interes_type", default: 0
     t.string   "interest"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -63,7 +63,7 @@ ActiveRecord::Schema.define(version: 20140524102135) do
     t.integer  "from"
     t.integer  "to"
     t.string   "message"
-    t.datetime "dateInserted", default: '2014-05-24 13:13:35'
+    t.datetime "dateInserted", default: '2014-05-25 12:27:29'
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -90,7 +90,7 @@ ActiveRecord::Schema.define(version: 20140524102135) do
   create_table "users_not_confirmed", force: true do |t|
     t.integer  "userId"
     t.string   "code"
-    t.datetime "dateInserted", default: '2014-05-24 13:13:34'
+    t.datetime "dateInserted", default: '2014-05-25 12:27:29'
     t.datetime "created_at"
     t.datetime "updated_at"
   end

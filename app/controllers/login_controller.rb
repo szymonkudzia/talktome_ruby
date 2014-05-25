@@ -12,7 +12,11 @@ class LoginController < BaseController
 			user.password = nil
 			user = user.attributes
 
-			user['birthdate'] = user['birthdate'].strftime("%Y-%m-%d %H:%M:%S")
+
+			if user['birthdate']
+        user['birthdate'] = user['birthdate'].strftime("%Y-%m-%d %H:%M:%S")
+      end
+      
 			render :json => decorateUser(user)
 			return
 		end
@@ -24,17 +28,14 @@ class LoginController < BaseController
   def decorateUser(user)
     countries = []
     Interest.getCountriesForUser(user['id']).each do |c|
-    	country = c.attributes
-
-        country['name'] = Localization.getTranslationFor(country['countryLabel'], user['country'])
-        countries.append(country)
+      countries.append(c.countryCode)
     end
 
 
     interests = []
     Interest.getInterestsForUser(user['id']).each do |i|
     	interests = i.attributes
-        interests.append(interest)
+      interests.append(interest)
     end
 
 

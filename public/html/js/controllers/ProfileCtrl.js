@@ -1,6 +1,6 @@
 talkToMeApp.controller('ProfileCtrl', function ($scope, $http, $routeParams, $location,
 	MainService,  WorkersNotifierService, ResrictAccessService, SlideInPageService,
-	UpdateUserService) {
+	UpdateUserService, ChangeProfilePictureService) {
 	ResrictAccessService.blockUnlogged();
 
 	// $scope.session = MainService.session MainService,
@@ -83,4 +83,20 @@ talkToMeApp.controller('ProfileCtrl', function ($scope, $http, $routeParams, $lo
 			$('#hobbies').multiselect('refresh');
 		}
 	});
+
+
+	$scope.changeProfilePicture = function () {
+		$('#newProfilePicture').click();
+
+		$('#newProfilePicture').unbind('change.loadNewPorfilePicture').bind('change.loadNewPorfilePicture', function () {
+			var file = $('#newProfilePicture').prop("files")[0];
+			console.log('file is ' + JSON.stringify(file));
+
+			ChangeProfilePictureService.changeProfilePicture(MainService.session.user.id, file, function (pathToFile) {
+				MainService.session.user.profilePicture = pathToFile;
+			})
+
+			console.log("picture file loading finished!");
+		});
+	};
 });

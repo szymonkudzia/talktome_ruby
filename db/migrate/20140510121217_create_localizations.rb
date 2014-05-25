@@ -147,6 +147,12 @@ VALUES
 	('pl-pl', 'confirmFriend', 'Potwierdź'),
 	('en-us', 'confirmFriend', 'Confirm'),
 	('pl-pl', 'rejectFriend', 'Odrzuć'),
-	('en-us', 'rejectFriend', 'Reject');"
+	('en-us', 'rejectFriend', 'Reject'),
+	('pl-pl', 'changeProfilePicture', 'Zmień zdjęcie profilowe'),
+	('en-us', 'changeProfilePicture', 'Change profile picture'),
+	('pl-pl', 'confirmed', 'Potwierdzeni'),
+	('en-us', 'confirmed', 'Confirmed'),
+	('pl-pl', 'unconfirmed', 'Nie potwierdzeni'),
+	('en-us', 'unconfirmed', 'Unconfirmed');"
   end
 end

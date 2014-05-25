@@ -7,7 +7,13 @@ class Localization < ActiveRecord::Base
 		if translation
 			return translation.value
 		else
-			return Localization.where(fieldName: fieldName, localization: 'en-us').first.value
+			translation = Localization.where(fieldName: fieldName, localization: 'en-us').first
+
+			if translation
+				return translation.value
+			else
+				return fieldName
+			end
 		end
 	end
 end

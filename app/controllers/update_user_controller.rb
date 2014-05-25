@@ -8,7 +8,11 @@ class UpdateUserController < BaseController
     if u
     	u.email = user['email']
     	u.country = user['country']
-    	u.birthdate = Time.strptime(user['birthdate'], "%Y-%m-%d %H:%M:%S")
+
+      if user['birthdate']
+    	 u.birthdate = Time.strptime(user['birthdate'], "%Y-%m-%d %H:%M:%S")
+      end
+
     	u.firstName = user['firstName']
     	u.lastName = user['lastName']
     	u.profilePicture = user['profilePicture']
@@ -22,7 +26,19 @@ class UpdateUserController < BaseController
 
     	u.save
 
-      #TODO update countries that user is interested in
+      if user['countries']
+        Interest.delete_all(userId: u.id, interes_type: 1)
+        
+        user['countries'].each do |country|
+          Interest.new do |interest|
+            interest.userId = user['id']
+            interest.interes_type = 1
+            interest.interest = country
+
+            interest.save
+          end
+        end
+      end
     end
 
     render :json => {}

@@ -3,8 +3,8 @@
 <div class="slideInPageContainer fill-x">
 	<div id="search" class="col-md-12 no-padding">
 		<ul class="nav nav-pills">
-			<li ng-class="{active: confirmed}"><a ng-click="changeFriendsType(1)">Potwierdzeni</a></li>
-			<li ng-class="{active: !confirmed}"><a ng-click="changeFriendsType(2)">Nie potwierdzeni</a></li>
+			<li ng-class="{active: confirmed}"><a ng-click="changeFriendsType(1)">{{ session.localization.confirmed }}</a></li>
+			<li ng-class="{active: !confirmed}"><a ng-click="changeFriendsType(2)">{{ session.localization.unconfirmed }}</a></li>
 		</ul>
 
 

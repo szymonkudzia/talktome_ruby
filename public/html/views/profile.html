@@ -5,9 +5,11 @@
 		<div class="col-md-12 no-padding">
 			<h3 style="margin-top: 0px;margin-bottom: 10px;">{{ session.user.firstName }} {{ session.user.lastName }}</h3>
 		</div>
-		<img src="html/img/noProfilePicture.png" class="profilePicture form-control border-color"/>
+		<img src="{{ session.user.profilePicture }}" class="profilePicture form-control border-color"/>
 
 		<button class="btn border-color btn-success" ng-click="logout()">{{ session.localization.logout }}</button>
+		<button class="btn border-color" ng-click="changeProfilePicture()">{{ session.localization.changeProfilePicture }}</button>
+		<input type="file" id="newProfilePicture" style="display: none;"/>
 	</div>
 	
 	<div class="col-md-9 mainRightPanel">
