@@ -50,8 +50,8 @@ talkToMeApp.controller('ConversationCtrl', function ($scope, $http, $routeParams
 	}
 
 	$scope.genName = function (friend) {
-		if (friend)
-			return (friend.firstName ? firend.firstName : "" ) + ' ' + (friend.lastName ? friend.lastName : "");
+		if (friend != undefined)
+			return (friend.firstName ? friend.firstName : "" ) + ' ' + (friend.lastName ? friend.lastName : "");
 
 		return "No friends yet? :(";
 	};

@@ -21,6 +21,17 @@
 		<div class=" well border-color">
 			<img ng-src="{{session.activeFriendInConversation.profilePicture}}"/>
 			<strong><span>{{ genName(session.activeFriendInConversation) }}</span></strong>
+
+			<div class="btn-group" style="float: right; margin-top: 4px;">
+			  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" ng-disabled="!session.activeFriendInConversation">
+			    Pobierz historie rozmowy <span class="caret"></span>
+			  </button>
+
+			  <ul class="dropdown-menu" role="menu">
+			    <li><a href="/service/history.pdf?userId={{ session.user.id }}&ampfriendId={{ session.activeFriendInConversation.id }}">PDF</a></li>
+			    <li><a href="/service/history.csv?userId={{ session.user.id }}&ampfriendId={{ session.activeFriendInConversation.id }}">CSV</a></li>
+			  </ul>
+			</div>
 		</div>
 	</div>
 
