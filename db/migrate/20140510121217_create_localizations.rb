@@ -153,6 +153,8 @@ VALUES
 	('pl-pl', 'confirmed', 'Potwierdzeni'),
 	('en-us', 'confirmed', 'Confirmed'),
 	('pl-pl', 'unconfirmed', 'Nie potwierdzeni'),
-	('en-us', 'unconfirmed', 'Unconfirmed');"
+	('en-us', 'unconfirmed', 'Unconfirmed'),
+	('pl-pl', 'getHistory', 'Pobierz historie'),
+	('en-us', 'getHistory', 'Get History');"
   end
 end
