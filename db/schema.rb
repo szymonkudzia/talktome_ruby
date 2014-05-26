@@ -63,7 +63,7 @@ ActiveRecord::Schema.define(version: 20140524102135) do
     t.integer  "from"
     t.integer  "to"
     t.string   "message"
-    t.datetime "dateInserted", default: '2014-05-25 12:27:29'
+    t.datetime "dateInserted", default: '2014-05-26 17:23:32'
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -75,23 +75,23 @@ ActiveRecord::Schema.define(version: 20140524102135) do
     t.date     "birthdate"
     t.string   "firstName"
     t.string   "lastName"
-    t.string   "profilePicture",             default: "html/img/noProfilePicture.png"
-    t.integer  "men",                        default: 1
-    t.integer  "women",                      default: 1
-    t.integer  "sex",                        default: 1
+    t.string   "profilePicture", default: "html/img/noProfilePicture.png"
+    t.integer  "men",            default: 1
+    t.integer  "women",          default: 1
+    t.integer  "sex",            default: 1
     t.string   "aboutMe"
     t.string   "telephone"
     t.string   "facebook"
     t.string   "googlep"
+    t.string   "salt"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "salt",           limit: nil
   end
 
   create_table "users_not_confirmed", force: true do |t|
     t.integer  "userId"
     t.string   "code"
-    t.datetime "dateInserted", default: '2014-05-25 12:27:29'
+    t.datetime "dateInserted", default: '2014-05-26 17:23:31'
     t.datetime "created_at"
     t.datetime "updated_at"
   end
